@@ -8,7 +8,7 @@
 	<!-- Stylesheets
 	============================================= -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,700" rel="stylesheet" type="text/css" />
-  <link href="https://db.onlinewebfonts.com/c/571f8bd755d29dc071ead59896f6c4ec?family=Blender+Pro" rel="stylesheet" type="text/css" />
+
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 
@@ -45,11 +45,32 @@
 		.font-body {
 			font-family: 'Blender Pro', 'Lato', sans-serif !important;
 		}
+
+		p, li {
+ 		 font-size: 16px;
+ 	 }
+	 .col-sm-4 ul li {
+		 margin-bottom: 6px;
+		 border-bottom: 1px solid #666;
+		 list-style: none;
+	 }
+	 .feature-box .fbox-icon i {
+		 background-color: #333;
+	 }
+	 .feature-box h3, .widget ul li  {
+		 font-size: 14px;
+	 }
+
+	 body {
+    background-image: url('img/building-2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	}
 	</style>
 
 </head>
 
-<body class="stretched overlay-menu">
+<body class="stretched">
 
 	<!-- Document Wrapper
 	============================================= -->
@@ -84,9 +105,9 @@
 							<li><a href="#" data-href="#section-blog"><div>Blog</div></a></li>
 							<li><a href="#" data-href="#section-contact"><div>Contact</div></a></li>
 						</ul>
-
+						<!--
 						<a href="#" id="overlay-menu-close" class="visible-lg-block visible-md-block"><i class="icon-line-cross"></i></a>
-
+					  -->
 					</nav><!-- #primary-menu end -->
 
 				</div>
@@ -104,8 +125,8 @@
 
 					<div class="vertical-middle center ignore-header">
 						<div class="emphasis-title bottommargin">
-							<h1 class="uppercase t700" style="font-family: 'Blender Pro'; font-size: 72px; word-spacing: 5px; color: #3BBAB3;">Rios</h1>
-							<span class="uppercase" style="color: #555;letter-spacing:8px; font-size: 18px">Architecture <span style="letter-spacing:1px;">//</span> Interior Design</span>
+							<h1 data-animate="fadeInUp" style="font-family: 'Blender Pro'; font-size: 72px; word-spacing: 5px; color: #3BBAB3;">RIOS</h1>
+              <span class="uppercase t700" style="color: #555;letter-spacing:8px; font-size: 18px">Architecture <span style="letter-spacing:1px;">//</span> Interior Design</span>
 		<!--					<p class="lead topmargin" style="max-width: 600px; line-height: 1.8; color: #444;">Our firm leverages technology to enhance the process of design. We provide enhanced visualization tools, quick turnaround on project deliverables and unparalleled dedication in meeting your project goals. We want nothing less than to exceed your expectations and ensure the success of your project.</p> -->
 						</div>
 						<div class="topmargin">
@@ -145,11 +166,77 @@
 
 					<div class="container clearfix">
 
+						<div class="emphasis-title">
+	          	<h2 class="bottommargin divcenter" style="max-width: 700px; font-size: 40px; font-family: 'Blender Pro';">Who we are?</h2>
+						</div>
+
+	          <div class="row topmargin-lg divcenter" style="max-width: 1000px;">
+	            <div class="col-sm-4 bottommargin">
+	              <div class="team">
+	                <div class="team-image">
+	                  <img src="img/alex-rios-450x550.jpg" alt="John Doe">
+	                  <div class="team-overlay">
+	                    <div class="team-social-icons">
+	                      <a href="#" class="social-icon si-borderless si-small si-facebook" title="Facebook">
+	                        <i class="icon-facebook"></i>
+	                        <i class="icon-facebook"></i>
+	                      </a>
+	                      <a href="#" class="social-icon si-borderless si-small si-twitter" title="Twitter">
+	                        <i class="icon-twitter"></i>
+	                        <i class="icon-twitter"></i>
+	                      </a>
+	                      <a href="#" class="social-icon si-borderless si-small si-github" title="Github">
+	                        <i class="icon-github"></i>
+	                        <i class="icon-github"></i>
+	                      </a>
+	                    </div>
+	                  </div>
+	                </div>
+	                <div class="team-desc team-desc-bg">
+	                  <div class="team-title"><h4>Alex Rios, AIA, NCARB, CDT, LEED AP BD+C</h4><span>President</span></div>
+	                </div>
+	              </div>
+
+	            </div>
+
+							<div class="col-sm-4 bottommargin">
+	              	<h3>Credentails and Achievements</h3>
+									<ul>
+										<li>Registered Architect [AR97426]</li>
+										<li>NCARB Certificate [81575]</li>
+										<li>LEED Accredited Professional [10719170]</li>
+										<li>Construction Documentation Technologist</li>
+										<li>CSI Merit Award for Design Excellence</li>
+										<li>AIA NCARB Architect Spotlight</li>
+										<li>Masters of Architecture - University of South Florida</li>
+										<li>Member, American Institute of Architects Associate Director</li>
+										<li>Member, Emerge Tampa Bay Community Outreach Committee</li>
+									</ul>
+	            </div>
+
+	            <div class="col-sm-4 col_last bottommargin">
+	              <div>
+	                <p class="divcenter">
+	                  Alex finds innovative ways of providing value to his clients. He is recognized for his ability to meet client’s expectations through
+	                  carefully listening to their unique goals while keeping a disciplined approach to project constraints and deadlines. Alex has extensive
+	                  experience in the latest software allowing for better delivery, communication, and workflow amongst the entire team.<br><br>
+
+										As a Tampa native, he is known for his service to the community through professional organziations such as the American Institute of Architects and the Tampa Chamber of Commerce.
+	                </p>
+	              </div>
+	            </div>
+	          </div>
+					</div>
+
+
+						<!--
+
+
 						<h2 class="divcenter bottommargin font-body" style="max-width: 700px; font-size: 40px;">How we are different?</h2>
 
 						<p class="lead divcenter bottommargin" style="max-width: 800px;">Our firm leverages technology to enhance the process of design.  We provide enhanced visualization tools, quick turnaround on project deliverables and unparalleled dedication in meeting your project goals.  We want nothing less than to exceed your expectations and ensure the success of your project.</p>
 
-						<!--<div class="clear"></div>-->
+						<!--<div class="clear"></div>
 						<div class="line"></div>
 						<div class="row topmargin-lg divcenter" style="max-width: 1000px;">
 
@@ -214,7 +301,7 @@
 					</div>
 					-->
 					<!-- Portfolio Items
-					============================================= -->
+					=============================================
 
 					<h2 class="divcenter bottommargin font-body center topmargin" style="max-width: 700px; font-size: 40px;">What is our experience?</h2>
 					<div class="col_one_third topmargin">
@@ -316,9 +403,123 @@
 						</div>
 					</div>
 						<div class="clear"></div>
+					-->
+					<div id="section-works" class="page-section notoppadding" style="background-color:#F9F9F9;">
+						<div class="section parallax full-screen nomargin noborder" data-stellar-background-ratio="0.4" >
+				      <div class="vertical-middle">
+				        <div class="container clearfix">
+									<div class="emphasis-title">
+										<h2 class="divcenter bottommargin center topmargin" style="max-width: 700px; font-size: 40px; font-family: 'Blender Pro';">What is our experience?</h2>
+									</div>
+									<div class="col_one_third topmargin">
+										<div class="feature-box fbox-center fbox-effect nobottomborder">
+											<div class="fbox-icon">
+												<a href="#"><i class="icon-et-heart"></i></a>
+											</div>
+											<h3><span>Health and Wellness</span>
+												<span class="subtitle">Naples Community Hospital: 26,000 sf</span>
+											</h3>
+											<div class="widget notopmargin">
+												<ul class="nobottommargin">
+													<li style="list-style: none;">Cardiac Catheterization Laboratory</li>
+													<li style="list-style: none;">Behavior Health Unit</li>
+												</ul>
+											</div>
+											<h3>
+												<span class="subtitle">Confidential: 26,500 sf</span>
+												<span class="subtitle">Quest Diagnostics Centers: 1,500 - 3,500 sf</span>
+											</h3>
+											<div class="widget notopmargin">
+												<ul class="nobottommargin">
+													<li style="list-style: none;">20 locations across Florida</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="col_one_third topmargin">
+										<div class="feature-box fbox-center fbox-effect nobottomborder">
+											<div class="fbox-icon">
+												<a href="#"><i class="icon-et-wallet"></i></a>
+											</div>
+											<h3><span>Professional and Financial Services</span>
+												<span class="subtitle">DLA Piper - Workplace: 22,000 sf</span>
+												<span class="subtitle">Bank of America - (3)Locations: Varies</span>
+												<span class="subtitle">PNC Bank - Workplace: 17,500 sf</span>
+											</h3>
+											<div class="widget notopmargin">
+												<ul class="nobottommargin">
+													<li style="list-style: none;">LEED Gold Project</li>
+												</ul>
+											</div>
+											<h3>
+												<span class="subtitle">Morgan Stanley - Lobby Renovation: 10,100 sf</span>
+												<span class="subtitle">Crisis Center of Tampa - 8,000 sf</span>
+											</h3>
+										</div>
+									</div>
+
+									<div class="col_one_third col_last topmargin">
+										<div class="feature-box fbox-center fbox-effect nobottomborder">
+											<div class="fbox-icon">
+												<a href="#"><i class="icon-et-mobile"></i></a>
+											</div>
+											<h3><span>Technology</span>
+												<span class="subtitle">Yahoo! - Workplace: 176,200 sf</span>
+												<span class="subtitle">Syniverse - Workplace: 20.200 sf</span>
+												<span class="subtitle">Fintech - Workplace: 21,100 sf</span>
+											</h3>
+										</div>
+									</div>
+
+									<div class="clear"></div>
+
+									<div class="col_one_third bottommargin">
+										<div class="feature-box fbox-center fbox-effect nobottomborder">
+											<div class="fbox-icon">
+												<a href="#"><i class="icon-et-basket"></i></a>
+											</div>
+											<h3><span>Retail</span>
+												<span class="subtitle">The Hertz Corporation: 5,500 sf</span>
+												<span class="subtitle">Starbucks: 2,000 - 4,000 sf</span>
+												<span class="subtitle">Confort Health: 2,000 sf</span>
+											</h3>
+										</div>
+									</div>
+
+									<div class="col_one_third bottommargin">
+										<div class="feature-box fbox-center fbox-effect nobottomborder">
+											<div class="fbox-icon">
+												<a href="#"><i class="icon-et-key"></i></a>
+											</div>
+											<h3><span>Residential &amp; Multifamily</span>
+												<span class="subtitle">Confidential: 3,500 - 6,000 sf</span>
+											</h3>
+											<div class="widget notopmargin">
+												<ul class="nobottommargin">
+													<li style="list-style: none;">10 locations across Florida</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="col_one_third bottommargin col_last">
+										<div class="feature-box fbox-center fbox-effect nobottomborder">
+											<div class="fbox-icon">
+												<a href="#"><i class="icon-et-tools"></i></a>
+											</div>
+											<h3><span>Educational / Cultural</span>
+												<span class="subtitle">Confidential: 220,000 sf</span>
+											</h3>
+										</div>
+									</div>
+
+				        </div>
+				      </div>
+				    </div>
 
 				</div>
-					<!--
+<!--
 				<div id="section-services" class="page-section notoppadding nobottompadding">
 
 					<div class="section nomargin">
@@ -390,6 +591,7 @@
 
 					</div>
 					-->
+					<div class="container clearfix">
 					<div class="section nomargin notoppadding" style="background: white;">
 						<div class="divcenter center" style="max-width: 900px;">
 							<h2 class="divcenter bottommargin font-body center topmargin" style="max-width: 700px; font-size: 40px; font-family: 'Blender Pro';">What do our clients think?</h2>
