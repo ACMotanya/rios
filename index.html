@@ -49,10 +49,11 @@
 		p, li {
  		 font-size: 16px;
  	 }
-	 .col-sm-4 ul li {
+	 .col-sm-6 ul li {
 		 margin-bottom: 6px;
 		 border-bottom: 1px solid #666;
 		 list-style: none;
+		 float: left;
 	 }
 	 .feature-box .fbox-icon i {
 		 background-color: #333;
@@ -61,11 +62,6 @@
 		 font-size: 14px;
 	 }
 
-	 body {
-    background-image: url('img/building-2.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-	}
 	</style>
 
 </head>
@@ -118,15 +114,15 @@
 
 		<!-- Slider
 		============================================= -->
-		<section id="slider" class="full-screen slider-parallax">
+		<section id="slider" class="force-full-screen full-screen">
 
-			<div class="full-screen section nopadding nomargin noborder ohidden" style="background: url('img/building-2.jpg'); background-size: cover; background-position: top center;">
+			<div class="force-full-screen full-screen dark section nopadding nomargin noborder ohidden"> <!-- style="background: url('img/building-2.jpg'); background-size: cover; background-position: top center;" -->
 				<div class="container clearfix">
 
 					<div class="vertical-middle center ignore-header">
 						<div class="emphasis-title bottommargin">
 							<h1 data-animate="fadeInUp" style="font-family: 'Blender Pro'; font-size: 72px; word-spacing: 5px; color: #3BBAB3;">RIOS</h1>
-              <span class="uppercase t700" style="color: #555;letter-spacing:8px; font-size: 18px">Architecture <span style="letter-spacing:1px;">//</span> Interior Design</span>
+              <span class="uppercase t700" style="color: #fff;letter-spacing:8px; font-size: 18px">Architecture <span style="letter-spacing:1px;">//</span> Interior Design</span>
 		<!--					<p class="lead topmargin" style="max-width: 600px; line-height: 1.8; color: #444;">Our firm leverages technology to enhance the process of design. We provide enhanced visualization tools, quick turnaround on project deliverables and unparalleled dedication in meeting your project goals. We want nothing less than to exceed your expectations and ensure the success of your project.</p> -->
 						</div>
 						<div class="topmargin">
@@ -148,7 +144,13 @@
 							</a>
 						</div>
 					</div>
+				</div>
+				<div class="video-wrap">
+					<video poster="images/videos/explore.jpg" preload="auto" loop autoplay muted>
+						<source src='images/videos/Working-Space.mp4' type='video/mp4' />
 
+					</video>
+					<div class="video-overlay" style="background-color: rgba(0,0,0,0.45);"></div>
 				</div>
 			</div>
 
@@ -166,244 +168,20 @@
 
 					<div class="container clearfix">
 
-						<div class="emphasis-title">
-	          	<h2 class="bottommargin divcenter" style="max-width: 700px; font-size: 40px; font-family: 'Blender Pro';">Who we are?</h2>
-						</div>
+						<h2 class="divcenter bottommargin font-body" style="max-width: 700px; font-size: 40px;">An architectural firm creating stunning &amp; engaging spaces</h2>
 
-	          <div class="row topmargin-lg divcenter" style="max-width: 1000px;">
-	            <div class="col-sm-4 bottommargin">
-	              <div class="team">
-	                <div class="team-image">
-	                  <img src="img/alex-rios-450x550.jpg" alt="John Doe">
-	                  <div class="team-overlay">
-	                    <div class="team-social-icons">
-	                      <a href="#" class="social-icon si-borderless si-small si-facebook" title="Facebook">
-	                        <i class="icon-facebook"></i>
-	                        <i class="icon-facebook"></i>
-	                      </a>
-	                      <a href="#" class="social-icon si-borderless si-small si-twitter" title="Twitter">
-	                        <i class="icon-twitter"></i>
-	                        <i class="icon-twitter"></i>
-	                      </a>
-	                      <a href="#" class="social-icon si-borderless si-small si-github" title="Github">
-	                        <i class="icon-github"></i>
-	                        <i class="icon-github"></i>
-	                      </a>
-	                    </div>
-	                  </div>
-	                </div>
-	                <div class="team-desc team-desc-bg">
-	                  <div class="team-title"><h4>Alex Rios, AIA, NCARB, CDT, LEED AP BD+C</h4><span>President</span></div>
-	                </div>
-	              </div>
+						<p class="lead divcenter bottommargin" style="max-width: 800px;">We find innovative ways of providing value to our clients. We are recognized for our ability to meet client’s expectations through
+						carefully listening to their unique goals while keeping a disciplined approach to project constraints and deadlines. Rios Archtecture and Interior Design has extensive
+						experience in the latest software allowing for better delivery, communication, and workflow amongst the entire team.<br><br>
 
-	            </div>
+						As a Tampa based company, we are known for our service to the community through professional organziations such as the American Institute of Architects and the Tampa Chamber of Commerce.</p>
 
-							<div class="col-sm-4 bottommargin">
-	              	<h3>Credentails and Achievements</h3>
-									<ul>
-										<li>Registered Architect [AR97426]</li>
-										<li>NCARB Certificate [81575]</li>
-										<li>LEED Accredited Professional [10719170]</li>
-										<li>Construction Documentation Technologist</li>
-										<li>CSI Merit Award for Design Excellence</li>
-										<li>AIA NCARB Architect Spotlight</li>
-										<li>Masters of Architecture - University of South Florida</li>
-										<li>Member, American Institute of Architects Associate Director</li>
-										<li>Member, Emerge Tampa Bay Community Outreach Committee</li>
-									</ul>
-	            </div>
+						<p class="bottommargin" style="font-size: 16px;"><a href="#" data-scrollto="#section-founders" data-easing="easeInOutExpo" data-speed="1250" data-offset="70" class="more-link">Learn more <i class="icon-angle-right"></i></a></p>
 
-	            <div class="col-sm-4 col_last bottommargin">
-	              <div>
-	                <p class="divcenter">
-	                  Alex finds innovative ways of providing value to his clients. He is recognized for his ability to meet client’s expectations through
-	                  carefully listening to their unique goals while keeping a disciplined approach to project constraints and deadlines. Alex has extensive
-	                  experience in the latest software allowing for better delivery, communication, and workflow amongst the entire team.<br><br>
-
-										As a Tampa native, he is known for his service to the community through professional organziations such as the American Institute of Architects and the Tampa Chamber of Commerce.
-	                </p>
-	              </div>
-	            </div>
-	          </div>
+						<div class="clear"></div>
 					</div>
-
-
-						<!--
-
-
-						<h2 class="divcenter bottommargin font-body" style="max-width: 700px; font-size: 40px;">How we are different?</h2>
-
-						<p class="lead divcenter bottommargin" style="max-width: 800px;">Our firm leverages technology to enhance the process of design.  We provide enhanced visualization tools, quick turnaround on project deliverables and unparalleled dedication in meeting your project goals.  We want nothing less than to exceed your expectations and ensure the success of your project.</p>
-
-						<!--<div class="clear"></div>
-						<div class="line"></div>
-						<div class="row topmargin-lg divcenter" style="max-width: 1000px;">
-
-							<div class="col-sm-4 bottommargin">
-
-								<div class="team">
-									<div class="team-image">
-										<img src="img/alex-rios-450x550.jpg" alt="John Doe">
-										<div class="team-overlay">
-											<div class="team-social-icons">
-												<a href="#" class="social-icon si-borderless si-small si-facebook" title="Facebook">
-													<i class="icon-facebook"></i>
-													<i class="icon-facebook"></i>
-												</a>
-												<a href="#" class="social-icon si-borderless si-small si-twitter" title="Twitter">
-													<i class="icon-twitter"></i>
-													<i class="icon-twitter"></i>
-												</a>
-												<a href="#" class="social-icon si-borderless si-small si-github" title="Github">
-													<i class="icon-github"></i>
-													<i class="icon-github"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-									<div class="team-desc team-desc-bg">
-										<div class="team-title"><h4>Alex Rios, AIA, NCARB, CDT, LEED AP BD+C</h4><span>President</span></div>
-									</div>
-								</div>
-
-							</div>
-
-							<div class="col-sm-8 bottommargin">
-
-								<div>
-									<p class="lead divcenter">
-										Alex finds innovative ways of providing value to his clients. He is recognized for his ability to meet client’s expectations through
-										carefully listening to their unique goals while keeping a disciplined approach to project constraints and deadlines. Alex has extensive
-										experience in the latest software allowing for better delivery, communication, and workflow amongst the entire team.
-									</p>
-									<p class="lead divcenter">
-										As a Tampa native, he is known for his service to the community through professional organziations such as the American Institute of Architects and the Tampa Chamber of Commerce.
-									</p>
-								</div>
-
-							</div>
-
-						</div>
-
-					</div>
-
 				</div>
 
-				<div id="section-works" class="page-section notoppadding" style="background-color:#F9F9F9;">
-					<!--
-					<div class="section nomargin">
-						<div class="container clearfix">
-							<div class="divcenter center" style="max-width: 900px;">
-								<h2 class="nobottommargin t300 ls1">We create &amp; craft projects that ooze creativity in every aspect. We try to create a benchmark in everything we do. Take a moment to browse through some of our recent completed work.</h2>
-							</div>
-						</div>
-					</div>
-					-->
-					<!-- Portfolio Items
-					=============================================
-
-					<h2 class="divcenter bottommargin font-body center topmargin" style="max-width: 700px; font-size: 40px;">What is our experience?</h2>
-					<div class="col_one_third topmargin">
-						<div class="feature-box fbox-center fbox-outline fbox-effect nobottomborder">
-							<div class="fbox-icon">
-								<a href="#"><i class="icon-heart i-alt"></i></a>
-							</div>
-							<h3>Health and Wellness
-								<span class="subtitle">Naples Community Hospital: 26,000 sf</span>
-							</h3>
-							<div class="widget notopmargin">
-								<ul class="nobottommargin">
-									<li>Cardiac Catheterization Laboratory</li>
-									<li>Behavior Health Unit</li>
-								</ul>
-							</div>
-							<h3>
-								<span class="subtitle">Confidential: 26,500 sf</span>
-								<span class="subtitle">Quest Diagnostics - Patient Centers: 1,500 - 3,500 sf</span>
-							</h3>
-							<ul class="nobottommargin">
-								<li style="list-style: none;">20 locations across Florida</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="col_one_third topmargin">
-						<div class="feature-box fbox-center fbox-outline fbox-effect nobottomborder">
-							<div class="fbox-icon">
-								<a href="#"><i class="icon-money i-alt"></i></a>
-							</div>
-							<h3>Professional and Financial Services
-								<span class="subtitle">DLA Piper - Workplace: 22,000 sf</span>
-								<span class="subtitle">Bank of America - (3)Locations: Varies</span>
-								<span class="subtitle">PNC Bank - Workplace: 17,500 sf</span>
-							</h3>
-							<div class="widget notopmargin">
-								<ul class="nobottommargin">
-									<li style="list-style: none;">LEED Gold Project</li>
-								</ul>
-							</div>
-							<h3>
-								<span class="subtitle">Morgan Stanley - Lobby Renovation: 10,100 sf</span>
-								<span class="subtitle">Crisis Center of Tampa - 8,000 sf</span>
-							</h3>
-						</div>
-					</div>
-
-					<div class="col_one_third col_last topmargin">
-						<div class="feature-box fbox-center fbox-outline fbox-effect nobottomborder">
-							<div class="fbox-icon">
-								<a href="#"><i class="icon-text-width i-alt"></i></a>
-							</div>
-							<h3>Technology
-								<span class="subtitle">Yahoo! - Workplace: 176,200 sf</span>
-								<span class="subtitle">Syniverse - Workplace: 20.200 sf</span>
-								<span class="subtitle">Fintech - Workplace: 21,100 sf</span>
-							</h3>
-						</div>
-					</div>
-
-					<div class="clear"></div>
-
-					<div class="col_one_third bottommargin">
-						<div class="feature-box fbox-center fbox-outline fbox-effect nobottomborder">
-							<div class="fbox-icon">
-								<a href="#"><i class="icon-cart i-alt"></i></a>
-							</div>
-							<h3>Retail
-								<span class="subtitle">The Hertz Corporation: 5,500 sf</span>
-								<span class="subtitle">Starbucks: 2,000 - 4,000 sf</span>
-								<span class="subtitle">Confort Health: 2,000 sf</span>
-							</h3>
-						</div>
-					</div>
-
-					<div class="col_one_third bottommargin">
-						<div class="feature-box fbox-center fbox-outline fbox-effect nobottomborder">
-							<div class="fbox-icon">
-								<a href="#"><i class="icon-crop i-alt"></i></a>
-							</div>
-							<h3>Residental &amp; Multifamily
-								<span class="subtitle">Confidential: 3,500 - 6,000 sf</span>
-							</h3>
-							<ul class="nobottommargin">
-								<li style="list-style: none;">10 locations across Florida</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="col_one_third bottommargin col_last">
-						<div class="feature-box fbox-center fbox-outline fbox-effect nobottomborder">
-							<div class="fbox-icon">
-								<a href="#"><i class="icon-eye i-alt"></i></a>
-							</div>
-							<h3>Educational / Cultural
-								<span class="subtitle">Confidential: 220,000 sf</span>
-							</h3>
-						</div>
-					</div>
-						<div class="clear"></div>
-					-->
 					<div id="section-works" class="page-section notoppadding" style="background-color:#F9F9F9;">
 						<div class="section parallax full-screen nomargin noborder" data-stellar-background-ratio="0.4" >
 				      <div class="vertical-middle">
@@ -517,128 +295,15 @@
 				        </div>
 				      </div>
 				    </div>
-
-				</div>
-<!--
-				<div id="section-services" class="page-section notoppadding nobottompadding">
-
-					<div class="section nomargin">
-						<div class="container clearfix">
-							<div class="divcenter center" style="max-width: 900px;">
-								<h2 class="nobottommargin t300 ls1">Like Our Work? Get in <a href="#" data-scrollto="#template-contactform" data-offset="140" data-easing="easeInOutExpo" data-speed="1250" class="button button-border button-circle button-large notopmargin nobottommargin" style="position: relative; top: -3px;">Touch</a></h2>
-							</div>
-						</div>
 					</div>
-				</div>
 
-					<div class="common-height clearfix">
-
-						<div class="col-md-4 hidden-xs" style="background: url('img/services.jpg') center center no-repeat; background-size: cover;"></div>
-						<div class="col-md-8">
-							<div class="max-height">
-								<div class="row common-height grid-border clearfix">
-									<div class="col-md-4 col-sm-6 col-padding">
-										<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-											<div class="fbox-icon">
-												<a href="#"><i class="icon-et-mobile"></i></a>
-											</div>
-											<h3>Responsive Collaboration</h3>
-										</div>
-									</div>
-									<div class="col-md-4 col-sm-6 col-padding">
-										<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-											<div class="fbox-icon">
-												<a href="#"><i class="icon-et-presentation"></i></a>
-											</div>
-											<h3>Beautifully Presented</h3>
-										</div>
-									</div>
-									<div class="col-md-4 col-sm-6 col-padding">
-										<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-											<div class="fbox-icon">
-												<a href="#"><i class="icon-et-puzzle"></i></a>
-											</div>
-											<h3>Extensively Extendable</h3>
-										</div>
-									</div>
-									<div class="col-md-4 col-sm-6 col-padding">
-										<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-											<div class="fbox-icon">
-												<a href="#"><i class="icon-et-gears"></i></a>
-											</div>
-											<h3>Powerfully Customizable</h3>
-										</div>
-									</div>
-									<div class="col-md-4 col-sm-6 col-padding">
-										<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-											<div class="fbox-icon">
-												<a href="#"><i class="icon-et-genius"></i></a>
-											</div>
-											<h3>Geniusly Transformable</h3>
-										</div>
-									</div>
-									<div class="col-md-4 col-sm-6 col-padding">
-										<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-											<div class="fbox-icon">
-												<a href="#"><i class="icon-et-hotairballoon"></i></a>
-											</div>
-											<h3>Industrial Support</h3>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-					-->
 					<div class="container clearfix">
 					<div class="section nomargin notoppadding" style="background: white;">
 						<div class="divcenter center" style="max-width: 900px;">
 							<h2 class="divcenter bottommargin font-body center topmargin" style="max-width: 700px; font-size: 40px; font-family: 'Blender Pro';">What do our clients think?</h2>
 						</div>
 					</div>
-					<!--
-					<div class="section parallax nomargin dark" style="background-image: url('img/testimonial-1.jpg'); padding: 150px 0;" data-stellar-background-ratio="0.3">
-						<div class="container clearfix">
-							<div class="col_two_fifth nobottommargin">&nbsp;</div>
-							<div class="col_three_fifth nobottommargin col_last">
-								<div class="fslider testimonial testimonial-full nobgcolor noborder noshadow nopadding" data-arrows="false">
-									<div class="flexslider">
-										<div class="slider-wrap">
-											<div class="slide">
-												<div class="testi-content">
-													<p>Similique fugit repellendus expedita excepturi iure perferendis provident quia eaque vero numquam?</p>
-													<div class="testi-meta">
-														Steve Jobs
-														<span>Apple Inc.</span>
-													</div>
-												</div>
-											</div>
-											<div class="slide">
-												<div class="testi-content">
-													<p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
-													<div class="testi-meta">
-														Collis Ta'eed
-														<span>Envato Inc.</span>
-													</div>
-												</div>
-											</div>
-											<div class="slide">
-												<div class="testi-content">
-													<p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero illo rerum!</p>
-													<div class="testi-meta">
-														John Doe
-														<span>XYZ Inc.</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					-->
+
 					<ul class="testimonials-grid grid-3 clearfix">
 						<li>
 							<div class="testimonial">
@@ -726,6 +391,80 @@
 						</li>
 					</ul>
 				</div>
+
+
+				<div id="section-founders" class="center page-section">
+
+					<div class="container clearfix">
+
+						<div class="emphasis-title">
+	          	<h2 class="bottommargin divcenter" style="max-width: 700px; font-size: 40px; font-family: 'Blender Pro';">Who we are?</h2>
+						</div>
+
+	          <div class="row topmargin-lg divcenter" style="max-width: 1000px;">
+	            <div class="col-sm-6 bottommargin">
+	              <div class="team">
+	                <div class="team-image">
+	                  <img src="img/alex-rios-450x550.jpg" alt="John Doe">
+	                  <div class="team-overlay">
+	                    <div class="team-social-icons">
+	                      <a href="#" class="social-icon si-borderless si-small si-facebook" title="Facebook">
+	                        <i class="icon-facebook"></i>
+	                        <i class="icon-facebook"></i>
+	                      </a>
+	                      <a href="#" class="social-icon si-borderless si-small si-twitter" title="Twitter">
+	                        <i class="icon-twitter"></i>
+	                        <i class="icon-twitter"></i>
+	                      </a>
+	                      <a href="#" class="social-icon si-borderless si-small si-github" title="Github">
+	                        <i class="icon-github"></i>
+	                        <i class="icon-github"></i>
+	                      </a>
+	                    </div>
+	                  </div>
+	                </div>
+	                <div class="team-desc team-desc-bg">
+	                  <div class="team-title"><h4>Alex Rios, AIA, NCARB, CDT, LEED AP BD+C</h4><span>President</span></div>
+	                </div>
+	              </div>
+
+	            </div>
+
+							<div class="col-sm-6 bottommargin">
+	              	<h3>Credentails and Achievements</h3>
+									<ul>
+										<li>Registered Architect [AR97426]</li>
+										<li>NCARB Certificate [81575]</li>
+										<li>LEED Accredited Professional [10719170]</li>
+										<li>Construction Documentation Technologist</li>
+										<li>CSI Merit Award for Design Excellence</li>
+										<li>AIA NCARB Architect Spotlight</li>
+										<li>Masters of Architecture</li>
+										 	<ul>
+												<li>University of South Florida</li>
+											</ul>
+										<li>Member, American Institute of Architects Associate Director</li>
+										<li>Member, Emerge Tampa Bay Community Outreach Committee</li>
+									</ul>
+	            </div>
+							<!--
+	            <div class="col-sm-4 col_last bottommargin">
+	              <div>
+	                <p class="divcenter">
+	                  Alex finds innovative ways of providing value to his clients. He is recognized for his ability to meet client’s expectations through
+	                  carefully listening to their unique goals while keeping a disciplined approach to project constraints and deadlines. Alex has extensive
+	                  experience in the latest software allowing for better delivery, communication, and workflow amongst the entire team.<br><br>
+
+										As a Tampa native, he is known for his service to the community through professional organziations such as the American Institute of Architects and the Tampa Chamber of Commerce.
+	                </p>
+	              </div>
+	            </div>
+							-->
+	          </div>
+					</div>
+				</div>
+
+
 
 				<div id="section-blog" class="page-section">
 
