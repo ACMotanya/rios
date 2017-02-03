@@ -8,3 +8,16 @@
 
 
 
+.feature-box .fbox-icon i {
+  background-color: #3BBAB3;
+}
+
+
+@font-face {font-family: "Blender Pro";
+    src: url("fonts/Blender-Pro-Heavy.eot");
+    src: url("https://db.onlinewebfonts.com/t/571f8bd755d29dc071ead59896f6c4ec.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Blender-Pro-Heavy.woff2") format("woff2"),
+    url("fonts/Blender-Pro-Heavy.woff") format("woff"),
+    url("fonts/Blender-Pro-Heavy.ttf") format("truetype"),
+    url("fonts/Blender-Pro-Heavy.svg") format("svg");
+}
