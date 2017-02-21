@@ -38,7 +38,7 @@
 
 	<style>
 
-		#header:not(.sticky-header) #logo a { opacity: 1; pointer-events: none; }
+		#header:not(.sticky-header) #logo a { opacity: 0; pointer-events: none; }
 		.col-padding {
 			border-top: 1px solid rgba(0,0,0,0.05);
 			border-bottom: 1px solid rgba(0,0,0,0.05);
@@ -47,28 +47,6 @@
 			font-family: 'Blender Pro', 'Lato', sans-serif !important;
 		}
 
-		#header.sticky-header #header-wrap {
-			background-color: #333;
-		}
-		#header.sticky-header #header-wrap, #header.full-header.border-full-header.sticky-header #header-wrap {
-			border-bottom: none !important;
-		}
-		#primary-menu ul li > a {
-			color: white;
-		}
-		.si-twitter:hover, .si-colored.si-twitter, .si-twitter:hover, .si-colored.si-facebook {
-			background-color: #3BBAB3 !important;
-		}
-		.pricing--norbu .pricing--title {
-			color: white;
-			font-family: 'Blender Pro', 'Lato', sans-serif !important;
-			text-transform: uppercase;
-			font-size: 1.6em;
-		}
-		.pricing--norbu .pricing--item {
-			border-color: rgba(255,255,255,0);
-			border-radius: 0px;
-		}
 		p, li {
  		 font-size: 16px;
  	 }
@@ -78,55 +56,35 @@
 		 list-style: none;
 		 float: left;
 	 }
-	 .feature-box .fbox-icon i {
-		 background-color: #333;
-	 }
-	 .feature-box h3, .widget ul li  {
-		 font-size: 14px;
-	 }
+
 	 div.col-sm-6 p {
 		 margin-bottom: 5px;
 	 }
-	 .owl-carousel .owl-dots .owl-dot span {
-		 background-color: white;
-	 }
 
-	 .togglet.exp-toggle {
-		 padding: 0 0 0 0px;
-		 text-decoration: underline;
-		 color: white;
-	 }
-
-	 .togglec ul li {
-		 font-size: 14px;
-	 }
 	 @media (min-width: 468px){
 		 div.team-image img {
 			 width: 65%;
 		 }
 	 }
-	 @media (max-width: 991px) {
-	   #primary-menu ul li > a {
-		   color: #333;
-	   }
+	 h3, h4 {
+		 color: #999;
 	 }
 
-	.owl-carousel .owl-nav [class*=owl-] {
-		opacity: 1;
-		background: none;
-		border: none;
-		color: rgba(255, 255, 255, 0.9);
-		font-size: 50px;
-		width: 50px;
-		height: 50px;
-		line-height: 45px;
-		border-radius: 0;
-		text-align: center;
+
+	.pricing-box.pricing-extended .pricing-action-area {
+		left: 0;
+		right: auto;
+		border-right: 1px solid rgba(0,0,0,0.05);
 	}
-	.owl-carousel .owl-nav [class*=owl-]:hover {
-		background: rgba(0, 0, 0, 0.1) !important;
-		color: #FFF;
+	@media (min-width: 991px){
+		.pricing-box.pricing-extended .pricing-desc {
+			float: right;
+		}
+		.pricing-price {
+			top: calc(30%);
+		}
 	}
+
 	</style>
 
 </head>
@@ -162,8 +120,10 @@
 							<li><a href="#" data-href="#wrapper"><div>Home</div></a></li>
 							<li><a href="#" data-href="#section-about" data-offset="60"><div>About</div></a></li>
 							<li><a href="#" data-href="#section-works"><div>Works</div></a></li>
-
+<!--
 							<li><a href="#" data-href="#section-blog"><div>Blog</div></a></li>
+						-->
+							<li><a href="#" data-href="#section-founders"><div>Principal</div></a></li>
 							<li><a href="#" data-href="#section-contact"><div>Contact</div></a></li>
 						</ul>
 						<!--
@@ -181,37 +141,28 @@
 		============================================= -->
 		<section id="slider" class="force-full-screen full-screen">
 
-			<div class="force-full-screen full-screen dark section nopadding nomargin noborder ohidden"> <!-- style="background: url('img/building-2.jpg'); background-size: cover; background-position: top center;" -->
+			<div class="force-full-screen full-screen nopadding nomargin noborder ohidden"> <!-- style="background: url('img/building-2.jpg'); background-size: cover; background-position: top center;" -->
 				<div class="container clearfix">
 
 					<div class="vertical-middle center ignore-header">
 						<div class="emphasis-title bottommargin">
 							<h1 data-animate="fadeInUp" style="font-family: 'Blender Pro'; font-size: 72px; word-spacing: 5px; color: #3BBAB3;">RIOS</h1>
-              <span class="uppercase t700" style="color: #fff;letter-spacing:8px; font-size: 18px">Architecture <span style="letter-spacing:1px;">//</span> Interior Design</span>
-		<!--					<p class="lead topmargin" style="max-width: 600px; line-height: 1.8; color: #444;">Our firm leverages technology to enhance the process of design. We provide enhanced visualization tools, quick turnaround on project deliverables and unparalleled dedication in meeting your project goals. We want nothing less than to exceed your expectations and ensure the success of your project.</p> -->
+              <span data-animate="fadeInUp" data-delay="1500"class="uppercase t700" style="letter-spacing:8px; font-size: 18px">Architecture <span style="letter-spacing:1px;">//</span> Interior Design</span>
 						</div>
-						<div class="topmargin">
-							<a href="#" class="social-icon inline-block si-small si-rounded si-colored si-facebook" title="Facebook">
-								<i class="icon-facebook"></i>
-								<i class="icon-facebook"></i>
-							</a>
-							<a href="#" class="social-icon inline-block si-small si-rounded si-colored si-twitter" title="Twitter">
-								<i class="icon-twitter"></i>
-								<i class="icon-twitter"></i>
-							</a>
-						</div>
+
 					</div>
 				</div>
+				<!--
 				<div class="video-wrap">
 					<video poster="img/office_cover.jpg" preload="auto" loop autoplay muted>
 						<source src='images/videos/Working-Space.mp4' type='video/mp4' />
-
 					</video>
 					<div class="video-overlay" style="background-color: rgba(0,0,0,0.45);"></div>
 				</div>
+				-->
 			</div>
 
-			<a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="70" class="one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown" style="color: white;"></i></a>
+			<a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="70" class="one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
 
 		</section><!-- #slider end -->
 
@@ -220,387 +171,242 @@
 		<section id="content">
 
 			<div class="content-wrap nopadding">
-				<div id="section-about" class="center page-section">
+				<div id="section-about" class="page-section">
 					<div class="container clearfix">
-				<!--		<h2 class="divcenter bottommargin font-body" style="max-width: 700px; font-size: 40px;">An architectural firm creating stunning &amp; engaging spaces</h2> -->
-						<p class="lead divcenter bottommargin" style="max-width: 800px;">We find innovative ways of providing value to our clients. We are recognized for our ability to meet client’s expectations through
-						carefully listening to their unique goals; while keeping a disciplined approach to project constraints and deadlines. <br><br>
-
-						RIOS Architecture and Interior Design has extensive experience in the latest software allowing for better delivery, communication, and workflow amongst the entire team.</p>
-						<!--
-						<p class="bottommargin" style="font-size: 16px;"><a href="#" data-scrollto="#section-founders" data-easing="easeInOutExpo" data-speed="1250" data-offset="70" class="more-link">Learn more <i class="icon-angle-right"></i></a></p>
-						-->
-						<div class="clear"></div>
+						<h1 data-animate="fadeInUp" style="font-family: 'Blender Pro'; font-size: 72px; word-spacing: 5px; color: #3BBAB3;">VALUE</h1>
+						<p data-animate="fadeInUp" class="lead bottommargin" style="max-width: 800px;">We find innovative ways to meet our client's goals and enhance the overall delivery process. Our focus is on effective
+							communication and providing value to our clients. We are recognized for our ability to meet client's expectations through carefully listening to their unique goals, leverging technology to
+							enhance the design process, all while keeping a disciplined approach to project constraints and deadlines. <br><br>
+							RIOS Architecture and Interior Design has extensive experience in the latest software allowing for better delivery, communication, and workflow amongst the entire team.
+						</p>
 					</div>
 				</div>
-
-					<div id="section-works" class="page-section notoppadding" style="background: linear-gradient(45deg, #3BBAB3, #333);">
-
-		        <div class="container clearfix">
-							<div class="emphasis-title">
-								<h2 class="divcenter bottommargin center topmargin" style="max-width: 700px; font-size: 40px; font-family: 'Blender Pro'; color: white;">What is our experience?</h2>
-							</div>
-							<!--
-							<div class="col_one_third topmargin">
-								<div class="feature-box fbox-center fbox-effect nobottomborder">
-									<div class="fbox-icon">
-										<a href="#"><i class="icon-et-heart"></i></a>
-									</div>
-									<h3><span>Health and Wellness</span>
-										<span class="subtitle">Naples Community Hospital: 26,000 sf</span>
-									</h3>
-									<div class="widget notopmargin">
-										<ul class="nobottommargin">
-											<li style="list-style: none;">Cardiac Catheterization Laboratory</li>
-											<li style="list-style: none;">Behavior Health Unit</li>
-										</ul>
-									</div>
-									<h3>
-										<span class="subtitle">Confidential: 26,500 sf</span>
-										<span class="subtitle">Quest Diagnostics Centers: 1,500 - 3,500 sf</span>
-									</h3>
-									<div class="widget notopmargin">
-										<ul class="nobottommargin">
-											<li style="list-style: none;">20 locations across Florida</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-
-							<div class="col_one_third topmargin">
-								<div class="feature-box fbox-center fbox-effect nobottomborder">
-									<div class="fbox-icon">
-										<a href="#"><i class="icon-et-wallet"></i></a>
-									</div>
-									<h3><span>Professional and Financial Services</span>
-										<span class="subtitle">DLA Piper - Workplace: 22,000 sf</span>
-										<span class="subtitle">Bank of America - (3)Locations: Varies</span>
-										<span class="subtitle">PNC Bank - Workplace: 17,500 sf</span>
-									</h3>
-									<div class="widget notopmargin">
-										<ul class="nobottommargin">
-											<li style="list-style: none;">LEED Gold Project</li>
-										</ul>
-									</div>
-									<h3>
-										<span class="subtitle">Morgan Stanley - Lobby Renovation: 10,100 sf</span>
-										<span class="subtitle">Crisis Center of Tampa - 8,000 sf</span>
-									</h3>
-								</div>
-							</div>
-
-							<div class="col_one_third col_last topmargin">
-								<div class="feature-box fbox-center fbox-effect nobottomborder">
-									<div class="fbox-icon">
-										<a href="#"><i class="icon-et-mobile"></i></a>
-									</div>
-									<h3><span>Technology</span>
-										<span class="subtitle">Yahoo! - Workplace: 176,200 sf</span>
-										<span class="subtitle">Syniverse - Workplace: 20.200 sf</span>
-										<span class="subtitle">Fintech - Workplace: 21,100 sf</span>
-									</h3>
-								</div>
-							</div>
-
-							<div class="clear"></div>
-
-							<div class="col_one_third bottommargin">
-								<div class="feature-box fbox-center fbox-effect nobottomborder">
-									<div class="fbox-icon">
-										<a href="#"><i class="icon-et-basket"></i></a>
-									</div>
-									<h3><span>Retail</span>
-										<span class="subtitle">The Hertz Corporation: 5,500 sf</span>
-										<span class="subtitle">Starbucks: 2,000 - 4,000 sf</span>
-										<span class="subtitle">Confort Health: 2,000 sf</span>
-									</h3>
-								</div>
-							</div>
-
-							<div class="col_one_third bottommargin">
-								<div class="feature-box fbox-center fbox-effect nobottomborder">
-									<div class="fbox-icon">
-										<a href="#"><i class="icon-et-key"></i></a>
-									</div>
-									<h3><span>Residential &amp; Multifamily</span>
-										<span class="subtitle">Confidential: 3,500 - 6,000 sf</span>
-									</h3>
-									<div class="widget notopmargin">
-										<ul class="nobottommargin">
-											<li style="list-style: none;">10 locations across Florida</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-
-							<div class="col_one_third bottommargin col_last">
-								<div class="feature-box fbox-center fbox-effect nobottomborder">
-									<div class="fbox-icon">
-										<a href="#"><i class="icon-et-tools"></i></a>
-									</div>
-									<h3><span>Educational / Cultural</span>
-										<span class="subtitle">Confidential: 220,000 sf</span>
-									</h3>
-								</div>
-							</div>
-							-->
-
-							<div id="oc-products" class="owl-carousel products-carousel carousel-widget owl-loaded owl-drag with-carousel-dots" data-margin="20" data-loop="true" data-nav="true" data-pagi="false" data-autoplay="5000" data-items-xxs="1" data-items-xs="1" data-items-sm="2" data-items-md="3" data-items-lg="4">
-
-								<div class="oc-item">
-									<div class="pricing pricing--norbu">
-										<div class="pricing--item">
-											<h3 class="pricing--title">Workplace<br><br></h3>
-											<!--
-											<div class="pricing--price">
-												<div class="fbox-icon">
-													<i class="icon-et-wallet"></i>
-												</div>
-											</div>
-
-											<div class="toggle">
-												<div class="togglet exp-toggle t400">Learn more</div>
-												<div class="togglec">
-														-->
-													<ul class="pricing--feature-list">
-														<li style="text-decoration: underline;" class="t600">Crisis Center of Tampa:</li>
-														<li class="pricing--feature">5,500 sf</li><br>
-														<li style="text-decoration: underline;" class="t600">Pediatric Cardiology Associates:</li>
-														<li class="pricing--feature">5,100 sf</li><br>
-														<li style="text-decoration: underline;" class="t600">DLA Piper:</li>
-														<li class="pricing--feature">22,000 sf</li><br>
-
-														<li style="text-decoration: underline;" class="t600">PNC Bank:</li>
-														<li class="pricing--feature">17,500 sf</li>
-														<li class="pricing--feature">LEED Gold Award</li><br>
-
-														<li style="text-decoration: underline;" class="t600">Yahoo!: </li>
-														<li class="pricing--feature">176,200 sf</li><br>
-														<li style="text-decoration: underline;" class="t600">Syniverse: </li>
-														<li class="pricing--feature">20,200 sf</li><br>
-														<li style="text-decoration: underline;" class="t600">Fintech: </li>
-														<li class="pricing--feature">21,100 sf</li>
-													</ul>
-													<!--
-												</div>
-											</div>
-											-->
-										</div>
-									</div>
-								</div>
-
-								<div class="oc-item">
-									<div class="pricing pricing--norbu">
-										<div class="pricing--item">
-											<h3 class="pricing--title">Institutional &amp; Outpatient</h3>
-											<!--
-											<div class="pricing--price">
-												<div class="fbox-icon">
-													<i class="icon-et-heart"></i>
-												</div>
-											</div>
-											<div class="toggle">
-												<div class="togglet exp-toggle t400">Learn More</div>
-												<div class="togglec">
-												-->
-													<ul class="pricing--feature-list">
-														<li style="text-decoration: underline;" class="t600">Assisted &amp; Independent Living:</li>
-														<li class="pricing--feature">400,000 sf</li><br>
-
-														<li style="text-decoration: underline;" class="t600">Naples Community Hospital:</li>
-														<li>Cardiac Catheterization Laboratory</li>
-														<li class="pricing--feature">14,000 sf</li>
-														<li>Behavior Health Unit</li>
-														<li class="pricing--feature">12,000 sf</li><br>
-
-														<li style="text-decoration: underline;" class="t600">Outpatient Clinic:</li>
-														<li class="pricing--feature">26,500 sf</li> <br>
-
-														<li style="text-decoration: underline;" class="t600">Quest Diagnostics:</li>
-														<li>20 locations across Florida</li>
-														<li class="pricing--feature">1,500 - 3,500 sf</li>
-
-													</ul>
-													<!--
-												</div>
-											</div>
-											-->
-										</div>
-									</div>
-								</div>
-
-								<div class="oc-item">
-									<div class="pricing pricing--norbu">
-										<div class="pricing--item">
-											<h3 class="pricing--title">Retail <br><br></h3>
-											<!--
-											<div class="pricing--price">
-												<div class="fbox-icon">
-													<i class="icon-et-basket"></i>
-												</div>
-											</div>
-											<div class="toggle">
-												<div class="togglet exp-toggle t400">Learn More</div>
-												<div class="togglec">
-												-->
-													<ul class="pricing--feature-list">
-														<li style="text-decoration: underline;" class="t600">The Hertz Corporation:</li>
-														<li class="pricing--feature">5,500 sf</li><br>
-														<li style="text-decoration: underline;" class="t600">Starbucks:</li>
-														<li class="pricing--feature">2,000 - 6,000 sf</li>
-														<li class="pricing--feature">3 locations</li><br>
-														<li style="text-decoration: underline;" class="t600">Comfort Health - Hair Salon:</li>
-														<li class="pricing--feature">2,000 sf</li>
-													</ul>
-													<!--
-												</div>
-											</div>
-											-->
-										</div>
-									</div>
-								</div>
-
-								<div class="oc-item">
-									<div class="pricing pricing--norbu">
-										<div class="pricing--item">
-											<h3 class="pricing--title">Residential<br><br></h3>
-											<!--
-											<div class="pricing--price">
-												<div class="fbox-icon">
-													<i class="icon-et-key"></i>
-												</div>
-											</div>
-											<div class="toggle">
-												<div class="togglet exp-toggle t400">Learn More</div>
-												<div class="togglec">
-												-->
-													<ul class="pricing--feature-list">
-														<li style="text-decoration: underline;" class="t600">Single Family Homes:</li>
-														<li class="pricing--feature">2,500 - 10,000 sf</li>
-														<li class="pricing--feature">8+ locations</li><br>
-														<li style="text-decoration: underline;" class="t600">Multi-family Renovation:</li>
-														<li class="pricing--feature">5,000 sf</li>
-													</ul>
-													<!--
-												</div>
-											</div>
-											-->
-										</div>
-									</div>
-								</div>
-
-							</div>
-		        </div>
-					</div>
-
-					<div class="clear"></div>
-					<!--
-					<div class="container clearfix">
-					<div class="section nomargin notoppadding" style="background: white;">
-						<div class="divcenter center" style="max-width: 900px;">
-							<h2 class="divcenter bottommargin font-body center topmargin" style="max-width: 700px; font-size: 40px; font-family: 'Blender Pro';">What do our clients think?</h2>
-						</div>
-					</div>
-
-					<ul class="testimonials-grid grid-3 clearfix">
-						<li>
-							<div class="testimonial">
-								<div class="testi-image">
-									<a href="#"><img src="images/testimonials/1.jpg" alt="Customer Testimonails"></a>
-								</div>
-								<div class="testi-content">
-									<p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero illo rerum repellendus!</p>
-									<div class="testi-meta">
-										John Doe
-										<span>XYZ Inc.</span>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="testimonial">
-								<div class="testi-image">
-									<a href="#"><img src="images/testimonials/2.jpg" alt="Customer Testimonails"></a>
-								</div>
-								<div class="testi-content">
-									<p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
-									<div class="testi-meta">
-										Collis Ta'eed
-										<span>Envato Inc.</span>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="testimonial">
-								<div class="testi-image">
-									<a href="#"><img src="images/testimonials/7.jpg" alt="Customer Testimonails"></a>
-								</div>
-								<div class="testi-content">
-									<p>Fugit officia dolor sed harum excepturi ex iusto magnam asperiores molestiae qui natus obcaecati facere sint amet.</p>
-									<div class="testi-meta">
-										Mary Jane
-										<span>Google Inc.</span>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="testimonial">
-								<div class="testi-image">
-									<a href="#"><img src="images/testimonials/3.jpg" alt="Customer Testimonails"></a>
-								</div>
-								<div class="testi-content">
-									<p>Similique fugit repellendus expedita excepturi iure perferendis provident quia eaque. Repellendus, vero numquam?</p>
-									<div class="testi-meta">
-										Steve Jobs
-										<span>Apple Inc.</span>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="testimonial">
-								<div class="testi-image">
-									<a href="#"><img src="images/testimonials/4.jpg" alt="Customer Testimonails"></a>
-								</div>
-								<div class="testi-content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, perspiciatis illum totam dolore deleniti labore.</p>
-									<div class="testi-meta">
-										Jamie Morrison
-										<span>Adobe Inc.</span>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="testimonial">
-								<div class="testi-image">
-									<a href="#"><img src="images/testimonials/8.jpg" alt="Customer Testimonails"></a>
-								</div>
-								<div class="testi-content">
-									<p>Porro dolorem saepe reiciendis nihil minus neque. Ducimus rem necessitatibus repellat laborum nemo quod.</p>
-									<div class="testi-meta">
-										Cyan Ta'eed
-										<span>Tutsplus</span>
-									</div>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-				-->
-
-				<div id="section-founders" class="center page-section">
-
-					<div class="container clearfix">
-
+				<div class="line divcenter" style="width: 80%;"></div>
+				<div id="section-works" class="page-section">
+        	<div class="container clearfix">
 						<div class="emphasis-title">
-	          	<h2 class="bottommargin divcenter" style="max-width: 700px; font-size: 40px; font-family: 'Blender Pro';">Who we are?</h2>
+							<h1 data-animate="fadeInUp" style="font-family: 'Blender Pro'; font-size: 72px; word-spacing: 5px; color: #3BBAB3;">experience</h1>
+						</div>
+						<div data-animate="fadeInUp" class="pricing-box pricing-extended bottommargin clearfix">
+							<div class="pricing-action-area">
+								<div class="pricing-price">
+									<h1 style="font-family: 'Blender Pro'; color: #999;">Workplace</h1>
+								</div>
+							</div>
+							<div class="pricing-desc">
+
+								<div class="pricing-features">
+									<ul class="clearfix">
+										<li style="text-decoration: underline;" class="t600">Crisis Center of Tampa:</li>
+										<li class="pricing--feature">5,500 sf</li><br>
+										<li style="text-decoration: underline;" class="t600">Pediatric Cardiology Associates:</li>
+										<li class="pricing--feature">5,100 sf</li><br>
+										<li style="text-decoration: underline;" class="t600">DLA Piper:</li>
+										<li class="pricing--feature">22,000 sf</li><br>
+										<li style="text-decoration: underline;" class="t600">PNC Bank:</li>
+										<li class="pricing--feature">17,500 sf</li>
+										<li class="pricing--feature">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LEED Gold Award</li><br>
+										<div class="clear"></div>
+										<li style="text-decoration: underline;" class="t600">Yahoo!: </li>
+										<li class="pricing--feature">176,200 sf</li><br>
+										<li style="text-decoration: underline;" class="t600">Syniverse: </li>
+										<li class="pricing--feature">20,200 sf</li><br>
+										<li style="text-decoration: underline;" class="t600">Fintech: </li>
+										<li class="pricing--feature">21,100 sf</li>
+									</ul>
+								</div>
+							</div>
 						</div>
 
-	          <div class="row topmargin-lg divcenter" style="max-width: 1000px;">
-	            <div class="col-sm-6 bottommargin">
+						<div data-animate="fadeInUp" class="pricing-box pricing-extended bottommargin clearfix">
+							<div class="pricing-action-area">
+								<div class="pricing-price">
+									<h1 style="font-family: 'Blender Pro'; color: #999;">Institutional &amp; Outpatient</h1>
+								</div>
+							</div>
+							<div class="pricing-desc">
+								<div class="pricing-features">
+									<ul class="clearfix">
+										<li style="text-decoration: underline;" class="t600">Assisted &amp; Independent Living:</li>
+										<li class="pricing--feature">400,000 sf</li><br>
+										<li style="text-decoration: underline;" class="t600">Naples Community Hospital:</li>
+										<div class="clear"></div>
+										<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cardiac Catheterization Laboratory</li>
+										<li class="pricing--feature">14,000 sf</li>
+										<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Behavior Health Unit</li>
+										<li class="pricing--feature">12,000 sf</li><br>
+										<div class="clear"></div>
+										<li style="text-decoration: underline;" class="t600">Outpatient Clinic:</li>
+										<li class="pricing--feature">26,500 sf</li><br>
+										<li style="text-decoration: underline;" class="t600">Quest Diagnostics:</li>
+										<li>1,500 - 3,500 sf</li>
+										<li class="pricing--feature">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20 locations across Florida</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div data-animate="fadeInUp" class="pricing-box pricing-extended bottommargin clearfix">
+							<div class="pricing-action-area">
+								<div class="pricing-price">
+									<h1 style="font-family: 'Blender Pro'; color: #999;">Retail</h1>
+								</div>
+							</div>
+							<div class="pricing-desc">
+								<div class="pricing-features">
+									<ul class="clearfix">
+										<li style="text-decoration: underline;" class="t600">The Hertz Corporation:</li>
+										<li class="pricing--feature">5,500 sf</li>
+										<li style="text-decoration: underline;" class="t600">Starbucks:</li>
+										<li class="pricing--feature">2,000 - 6,000 sf</li>
+										<li class="pricing--feature">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 locations</li>
+										<div class="clear"></div>
+										<li style="text-decoration: underline;" class="t600">Comfort Health - Hair Salon:</li>
+										<li class="pricing--feature">2,000 sf</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div data-animate="fadeInUp" class="pricing-box pricing-extended bottommargin clearfix">
+							<div class="pricing-action-area">
+								<div class="pricing-price">
+									<h1 style="font-family: 'Blender Pro'; color: #999;">Residential</h1>
+								</div>
+							</div>
+							<div class="pricing-desc">
+
+								<div class="pricing-features">
+									<ul class="clearfix">
+										<li style="text-decoration: underline;" class="t600">Single Family Homes:</li>
+										<li >2,500 - 10,000 sf</li>
+										<li class="pricing--feature">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8+ locations</li>
+										<div class="clear"></div>
+										<li style="text-decoration: underline;" class="t600">Multi-family Renovation:</li>
+										<li class="pricing--feature">5,000 sf</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+<!--
+
+						<div id="oc-products" class="owl-carousel products-carousel carousel-widget owl-loaded owl-drag with-carousel-dots" data-margin="20" data-loop="true" data-nav="true" data-pagi="false" data-autoplay="5000" data-items-xxs="1" data-items-xs="1" data-items-sm="2" data-items-md="3" data-items-lg="4">
+							<div class="oc-item">
+								<div class="pricing pricing--norbu">
+									<div class="pricing--item">
+										<h3 class="pricing--title">Workplace<br><br></h3>
+										<ul class="pricing--feature-list">
+											<li style="text-decoration: underline;" class="t600">Crisis Center of Tampa:</li>
+											<li class="pricing--feature">5,500 sf</li><br>
+											<li style="text-decoration: underline;" class="t600">Pediatric Cardiology Associates:</li>
+											<li class="pricing--feature">5,100 sf</li><br>
+											<li style="text-decoration: underline;" class="t600">DLA Piper:</li>
+											<li class="pricing--feature">22,000 sf</li><br>
+											<li style="text-decoration: underline;" class="t600">PNC Bank:</li>
+											<li class="pricing--feature">17,500 sf</li>
+											<li class="pricing--feature">LEED Gold Award</li><br>
+											<li style="text-decoration: underline;" class="t600">Yahoo!: </li>
+											<li class="pricing--feature">176,200 sf</li><br>
+											<li style="text-decoration: underline;" class="t600">Syniverse: </li>
+											<li class="pricing--feature">20,200 sf</li><br>
+											<li style="text-decoration: underline;" class="t600">Fintech: </li>
+											<li class="pricing--feature">21,100 sf</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="oc-item">
+								<div class="pricing pricing--norbu">
+									<div class="pricing--item">
+										<h3 class="pricing--title">Institutional &amp; Outpatient</h3>
+										<ul class="pricing--feature-list">
+											<li style="text-decoration: underline;" class="t600">Assisted &amp; Independent Living:</li>
+											<li class="pricing--feature">400,000 sf</li><br>
+
+											<li style="text-decoration: underline;" class="t600">Naples Community Hospital:</li>
+											<li>Cardiac Catheterization Laboratory</li>
+											<li class="pricing--feature">14,000 sf</li>
+											<li>Behavior Health Unit</li>
+											<li class="pricing--feature">12,000 sf</li><br>
+
+											<li style="text-decoration: underline;" class="t600">Outpatient Clinic:</li>
+											<li class="pricing--feature">26,500 sf</li> <br>
+
+											<li style="text-decoration: underline;" class="t600">Quest Diagnostics:</li>
+											<li>20 locations across Florida</li>
+											<li class="pricing--feature">1,500 - 3,500 sf</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="oc-item">
+								<div class="pricing pricing--norbu">
+									<div class="pricing--item">
+										<h3 class="pricing--title">Retail <br><br></h3>
+										<ul class="pricing--feature-list">
+											<li style="text-decoration: underline;" class="t600">The Hertz Corporation:</li>
+											<li class="pricing--feature">5,500 sf</li><br>
+											<li style="text-decoration: underline;" class="t600">Starbucks:</li>
+											<li class="pricing--feature">2,000 - 6,000 sf</li>
+											<li class="pricing--feature">3 locations</li><br>
+											<li style="text-decoration: underline;" class="t600">Comfort Health - Hair Salon:</li>
+											<li class="pricing--feature">2,000 sf</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="oc-item">
+								<div class="pricing pricing--norbu">
+									<div class="pricing--item">
+										<h3 class="pricing--title">Residential<br><br></h3>
+										<ul class="pricing--feature-list">
+											<li style="text-decoration: underline;" class="t600">Single Family Homes:</li>
+											<li class="pricing--feature">2,500 - 10,000 sf</li>
+											<li class="pricing--feature">8+ locations</li><br>
+											<li style="text-decoration: underline;" class="t600">Multi-family Renovation:</li>
+											<li class="pricing--feature">5,000 sf</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						-->
+	        </div>
+
+				</div>
+
+				<div class="line divcenter" style="width: 80%;"></div>
+
+				<div id="section-founders" class="page-section">
+					<div class="container clearfix">
+						<div class="emphasis-title">
+	          	<h1 data-animate="fadeInUp" style="font-family: 'Blender Pro'; font-size: 72px; word-spacing: 5px; color: #3BBAB3;">LEADERSHIP</h1>
+						</div>
+
+	          <div class="row" style="max-width: 1000px;">
+
+							<div data-animate="fadeInUp" class="col-sm-6 bottommargin" style="text-align: left;">
+								<h3 style="margin-bottom: 10px;">CREDENTAILS &amp; ACHIEVEMENTS</h3>
+								<p>
+									Registered Architect [AR97426]<br/>
+									NCARB Certificate [81575]<br/>
+									LEED Accredited Professional [10719170]<br/>
+									Construction Documentation Technologist, CSI<br/>
+									Merit Award for Design Excellence, AIA<br/>
+									Panelist at AIA Florida Convention<br/>
+									NCARB Architect Spotlight<br/>
+									Masters of Architecture<br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;University of South Florida<br/>
+									Member, American Institute of Architects<br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Associate Director<br/>
+									Member, Emerge Tampa Bay<br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Community Outreach Committee<br/>
+								</p>
+							</div>
+							<div data-animate="fadeInUp" class="col-sm-6 bottommargin">
 	              <div class="team">
 	                <div class="team-image">
 	                  <img class="divcenter" src="img/alex-rios-450x550.jpg" alt="Alex Rios Portrait">
@@ -623,172 +429,38 @@
 	                </div>
 	              </div>
 	            </div>
-
-							<div class="col-sm-6 bottommargin" style="text-align: left;">
-								<h3 style="margin-bottom: 10px;">CREDENTAILS AND ACHIEVEMENTS</h3>
-								<p>Registered Architect [AR97426]</p>
-								<p>NCARB Certificate [81575]</p>
-								<p>LEED Accredited Professional [10719170]</p>
-								<p>Construction Documentation Technologist, CSI</p>
-								<p>Merit Award for Design Excellence, AIA</p>
-								<p>Panelist at AIA Florida Convention</p>
-								<p>NCARB Architect Spotlight</p>
-								<p>Masters of Architecture<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;University of South Florida</p>
-								<p>Member, American Institute of Architects<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Associate Director</p>
-								<p>Member, Emerge Tampa Bay<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Community Outreach Committee</p>
-							</div>
-							<div class="clear"></div>
-							<p class="lead divcenter bottommargin" style="max-width: 800px; font-size: 18px;">Mr. Rios has professionally distinguished himself through his eager pursuit and advocacy of licensure, involvement in local organizations such as the American Institute of Architects, and development of a diverse portfolio in the healthcare, commercial, and residential sectors.  As a Tampa native and Jesuit grad (’06), he is deeply invested in the development of the local community.  Much of who he has become stems from the work ethic and values instilled in him by his family.  Outside of architecture, Mr. Rios is actively pursuing his fitness goal of dunking a basketball (quite a challenge for someone who’s 5’-9 ¾”) and can often be found exercising along the downtown Tampa Riverwalk.   Some of his favorite local spots include Alifia State Park, Weedon Island Preserve, Sail Pavilion, and Ybor.</p>
-								<!--
-	              	<h3>Credentails and Achievements</h3>
-									<ul>
-										<li>Registered Architect [AR97426]</li>
-										<li>NCARB Certificate [81575]</li>
-										<li>LEED Accredited Professional [10719170]</li>
-										<li>Construction Documentation Technologist</li>
-										<li>CSI Merit Award for Design Excellence</li>
-										<li>AIA NCARB Architect Spotlight</li>
-										<li>Masters of Architecture</li>
-										 	<ul>
-												<li>University of South Florida</li>
-											</ul>
-										<li>Member, American Institute of Architects Associate Director</li>
-										<li>Member, Emerge Tampa Bay Community Outreach Committee</li>
-									</ul>
-	            </div>
-
-	            <div class="col-sm-4 col_last bottommargin">
-	              <div>
-	                <p class="divcenter">
-	                  Alex finds innovative ways of providing value to his clients. He is recognized for his ability to meet client’s expectations through
-	                  carefully listening to their unique goals while keeping a disciplined approach to project constraints and deadlines. Alex has extensive
-	                  experience in the latest software allowing for better delivery, communication, and workflow amongst the entire team.<br><br>
-
-										As a Tampa native, he is known for his service to the community through professional organziations such as the American Institute of Architects and the Tampa Chamber of Commerce.
-	                </p>
-	              </div>
-	            </div>
-							-->
+							<div class="line divcenter"></div>
+							<p data-animate="fadeInUp" class="lead" style="font-size: 18px;">
+								Much of who Mr. Rios has become stems form the values and work ethic instilled in him by his family. He demonstrates an eager desire to achieve success on every project and maintains a disciplined approach to
+								project constraints and deadlines. As a Tampa native and Jesuit grad ('06), he is deeply invested in the development of the local community. <br><br>Outside of architecture, Mr. Rios is actively pursuing his fitness goal of
+								dunking a basketball, and can often be found exercising along the downtown Tampa Riverwalk. Some of his favorite local spots include Alifia State Park, Weedon Island Preserve, Sail Pavilion, and Ybor City.
+							</p>
 	          </div>
 					</div>
 				</div>
 
+				<div class="line divcenter" style="width: 80%;"></div>
 
-				<!--
-				<div id="section-blog" class="page-section" style="background-color: #f9f9f9;">
-
-					<div class="container clearfix">
-
-						<h2 class="center uppercase t300 ls3 font-body">Recently From the Blog</h2>
-
-
-							<div class="row topmargin clearfix">
-
-								<div class="ipost col-sm-6 bottommargin clearfix">
-									<div class="row">
-										<div class="col-md-6">
-											<div class="entry-image nobottommargin">
-												<a href="#"><img src="img/blog-1.jpg" alt="AIA Convention"></a>
-											</div>
-										</div>
-										<div class="col-md-6" style="margin-top: 20px;">
-											<span class="before-heading" style="font-style: normal;">Press &amp; Media</span>
-											<div class="entry-title">
-												<h3 class="t400" style="font-size: 22px;"><a href="#">AIA Florida Convention</a></h3>
-											</div>
-											<div class="entry-content">
-												<a href="blog-entry.html" class="more-link">Read more <i class="icon-angle-right"></i></a>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="ipost col-sm-6 bottommargin clearfix">
-									<div class="row">
-										<div class="col-md-6">
-											<div class="entry-image nobottommargin">
-												<a href="#"><img src="images/blog/2.jpg" alt="Paris"></a>
-											</div>
-										</div>
-										<div class="col-md-6" style="margin-top: 20px;">
-											<span class="before-heading" style="font-style: normal;">Inside Scoops</span>
-											<div class="entry-title">
-												<h3 class="t400" style="font-size: 22px;"><a href="#">The New YouTube Economy unfolds itself</a></h3>
-											</div>
-											<div class="entry-content">
-												<a href="#" class="more-link">Read more <i class="icon-angle-right"></i></a>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="ipost col-sm-6 bottommargin clearfix">
-									<div class="row">
-										<div class="col-md-6">
-											<div class="entry-image nobottommargin">
-												<a href="#"><img src="images/blog/1.jpg" alt="Paris"></a>
-											</div>
-										</div>
-										<div class="col-md-6" style="margin-top: 20px;">
-											<span class="before-heading" style="font-style: normal;">Video Blog</span>
-											<div class="entry-title">
-												<h3 class="t400" style="font-size: 22px;"><a href="#">Kicking Off Design Party in Style</a></h3>
-											</div>
-											<div class="entry-content">
-												<a href="#" class="more-link">Read more <i class="icon-angle-right"></i></a>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="ipost col-sm-6 bottommargin clearfix">
-									<div class="row">
-										<div class="col-md-6">
-											<div class="entry-image nobottommargin">
-												<a href="#"><img src="images/blog/4.jpg" alt="Paris"></a>
-											</div>
-										</div>
-										<div class="col-md-6" style="margin-top: 20px;">
-											<span class="before-heading" style="font-style: normal;">Inspiration</span>
-											<div class="entry-title">
-												<h3 class="t400" style="font-size: 22px;"><a href="#">Top Ten Signs You're a Designer</a></h3>
-											</div>
-											<div class="entry-content">
-												<a href="#" class="more-link">Read more <i class="icon-angle-right"></i></a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<p class="bottommargin center" style="font-size: 16px;"><a href="blog.html" data-easing="easeInOutExpo" data-speed="1250" data-offset="70" class="more-link">Explore more posts <i class="icon-angle-right"></i></a></p>
-
+				<div id="section-contact" class="page-section">
+						<div class="container clearfix">
+					<div class="emphasis-title">
+						<h1 data-animate="fadeInUp" style="font-family: 'Blender Pro'; font-size: 72px; word-spacing: 5px; color: #3BBAB3;">LOCATION</h1>
 					</div>
-
 				</div>
-				-->
-				<div id="section-contact" class="page-section notoppadding">
-
-					<div class="row noleftmargin norightmargin bottommargin-lg common-height">
+					<div data-animate="fadeInUp" class="row noleftmargin norightmargin bottommargin-lg common-height">
 						<div id="headquarters-map" class="col-md-8 col-sm-6 gmap hidden-xs"></div>
-						<div class="col-md-4 col-sm-6" style="background: linear-gradient(90deg,  #333, #3BBAB3);">
+						<div class="col-md-4 col-sm-6">
 							<div class="col-padding max-height">
-								<h3 class="font-body t400 ls1" style="color: white;">Our Headquarters</h3>
-
-								<div style="font-size: 16px; line-height: 1.7; color:white;">
+								<h3 class="font-body t400 ls1">Office</h3>
+								<div style="font-size: 16px; line-height: 1.7;">
 									<address style="line-height: 1.7;">
 										<strong>North America:</strong><br>
 										700 S Harbour Island Blvd #235<br>
 										Tampa, FL 33602<br>
 									</address>
-
-
 									<div class="clear topmargin"></div>
-
+									<h3 class="font-body t400 ls1">Contact</h3>
 									<abbr title="Phone Number"><strong>Phone:</strong></abbr> (813) 727 2101<br>
-
 									<abbr title="Email Address"><strong>Email:</strong></abbr> Alex_Rios@RiosArchitecture.com
 								</div>
 							</div>
@@ -796,143 +468,52 @@
 					</div>
 
 					<div class="container clearfix">
-
-						<div class="divcenter topmargin" style="max-width: 850px;">
-
+						<div data-animate="fadeInUp" class="divcenter topmargin" style="max-width: 850px;">
 							<div id="contact-form-result" data-notify-type="success" data-notify-msg="<i class=icon-ok-sign></i> Message Sent Successfully!"></div>
-
 							<form class="nobottommargin" id="template-contactform" name="template-contactform" action="include/sendemail.php" method="post">
-
 								<div class="form-process"></div>
-
 								<div class="col_half">
 									<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control border-form-control required" placeholder="Name" />
 								</div>
 								<div class="col_half col_last">
 									<input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email sm-form-control border-form-control" placeholder="Email Address" />
 								</div>
-
 								<div class="clear"></div>
-
 								<div class="col_one_third">
 									<input type="text" id="template-contactform-phone" name="template-contactform-phone" value="" class="sm-form-control border-form-control" placeholder="Phone" />
 								</div>
-
 								<div class="col_two_third col_last">
 									<input type="text" id="template-contactform-subject" name="template-contactform-subject" value="" class="required sm-form-control border-form-control" placeholder="Subject" />
 								</div>
-
 								<div class="clear"></div>
-
 								<div class="col_full">
 									<textarea class="required sm-form-control border-form-control" id="template-contactform-message" name="template-contactform-message" rows="7" cols="30" placeholder="Your Message"></textarea>
 								</div>
-
 								<div class="col_full center">
 									<button class="button button-border button-circle t500 noleftmargin topmargin-sm" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Message</button>
 									<br>
 									<small style="display: block; font-size: 13px; margin-top: 15px;">We'll do our best to get back to you within 6-8 working hours.</small>
 								</div>
-
 								<div class="clear"></div>
-
 								<div class="col_full hidden">
 									<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
 								</div>
-
 							</form>
-
 						</div>
-
 					</div>
-
 				</div>
-
 			</div>
-
 		</section><!-- #content end -->
 
 		<!-- Footer
 		============================================= -->
 		<footer id="footer" class="dark noborder">
-			<!--
-			<div class="container center">
-				<div class="footer-widgets-wrap">
-
-					<div class="row divcenter clearfix">
-
-						<div class="col-md-4">
-
-							<div class="widget clearfix">
-								<h4>Site Links</h4>
-
-								<ul class="list-unstyled footer-site-links nobottommargin">
-									<li><a href="#" data-scrollto="#wrapper" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Top</a></li>
-									<li><a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">About</a></li>
-									<li><a href="#" data-scrollto="#section-works" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Works</a></li>
-									<li><a href="#" data-scrollto="#section-blog" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Blog</a></li>
-									<li><a href="#" data-scrollto="#section-contact" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Contact</a></li>
-								</ul>
-							</div>
-
-						</div>
-
-						<div class="col-md-4">
-
-							<div class="widget clearfix">
-								<h4>Subscribe</h4>
-
-								<div id="widget-subscribe-form-result" data-notify-type="success" data-notify-msg=""></div>
-								<form id="widget-subscribe-form" action="../include/subscribe.php" role="form" method="post" class="nobottommargin">
-									<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control input-lg not-dark required email" placeholder="Your Email Address">
-									<button class="button button-border button-circle button-light topmargin-sm" type="submit">Subscribe Now</button>
-								</form>
-							</div>
-
-						</div>
-
-						<div class="col-md-4">
-
-							<div class="widget clearfix">
-								<h4>Contact</h4>
-
-								<p class="lead">401 North Ashley Drive #173402<br>Tampa, FL 33602</p>
-
-								<div class="center topmargin-sm">
-									<a href="#" class="social-icon inline-block noborder si-small si-facebook" title="Facebook">
-										<i class="icon-facebook"></i>
-										<i class="icon-facebook"></i>
-									</a>
-									<a href="#" class="social-icon inline-block noborder si-small si-twitter" title="Twitter">
-										<i class="icon-twitter"></i>
-										<i class="icon-twitter"></i>
-									</a>
-									<a href="#" class="social-icon inline-block noborder si-small si-github" title="Github">
-										<i class="icon-github"></i>
-										<i class="icon-github"></i>
-									</a>
-									<a href="#" class="social-icon inline-block noborder si-small si-pinterest" title="Pinterest">
-										<i class="icon-pinterest"></i>
-										<i class="icon-pinterest"></i>
-									</a>
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-			-->
 			<div id="copyrights">
 				<div class="container center clearfix">
 					RIOS Architecture 2017 | All Rights Reserved
 				</div>
 			</div>
-
 		</footer><!-- #footer end -->
-
 	</div><!-- #wrapper end -->
 
 	<!-- Go To Top
@@ -973,7 +554,7 @@
 
 			// Google Map
 			jQuery('#headquarters-map').gMap({
-				address: 'Tampa, Florida',
+				address: '700 S Harbour Island Blvd #235, Tampa, FL',
 				maptype: 'ROADMAP',
 				zoom: 12,
 				markers: [
@@ -982,8 +563,8 @@
 						html: "RIOS ARCHITECTURE",
 						icon: {
 							image: "images/icons/map-icon-red.png",
-							iconsize: [35, 35],
-							iconanchor: [14,44]
+							iconsize: [27, 35],
+							iconanchor: [13,30]
 						}
 					}
 				],
@@ -1013,22 +594,6 @@
 							$(form).find('.sm-form-control').val('');
 							$('#contact-form-result').attr('data-notify-msg', $('#contact-form-result').html()).html('');
 							SEMICOLON.widget.notifications($('#contact-form-result'));
-						}
-					});
-				}
-			});
-
-			// Widget Subscribe Form
-			$("#widget-subscribe-form").validate({
-				submitHandler: function(form) {
-					$(form).find('.input-group-addon').find('.icon-email2').removeClass('icon-email2').addClass('icon-line-loader icon-spin');
-					$(form).ajaxSubmit({
-						target: '#widget-subscribe-form-result',
-						success: function() {
-							$(form).find('.input-group-addon').find('.icon-line-loader').removeClass('icon-line-loader icon-spin').addClass('icon-email2');
-							$('#widget-subscribe-form').find('.form-control').val('');
-							$('#widget-subscribe-form-result').attr('data-notify-msg', $('#widget-subscribe-form-result').html()).html('');
-							SEMICOLON.widget.notifications($('#widget-subscribe-form-result'));
 						}
 					});
 				}
