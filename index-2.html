@@ -23,8 +23,6 @@
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
 
 	<link rel="stylesheet" href="css-2/fonts.css" type="text/css" />
-	<link rel="stylesheet" href="css/components/pricing-table.css" type="text/css" />
-
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
 	<link rel="stylesheet" href="css/custom.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -161,7 +159,7 @@
 
 		<!-- Header
 		============================================= -->
-		<header id="header" class="full-header transparent-header static-sticky" data-sticky-offset="full" data-sticky-offset-negative="75" data-animate="fadeIn" data-delay="150">
+		<header id="header" class="full-header transparent-header static-sticky" data-sticky-offset="full" data-sticky-offset-negative="75">
 
 			<div id="header-wrap">
 
@@ -568,6 +566,12 @@
 						}
 					});
 				}
+			});
+
+			$(function () {
+			  $('#primary-menu').fadeOut( function () {
+			    $(this).delay(1350).fadeIn(2000);
+			  });
 			});
 
 		</script>
