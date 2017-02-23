@@ -42,6 +42,7 @@
 			opacity: 0;
 			pointer-events: none;
 		}
+
 		#header.sticky-header #logo a {
 		-webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 1.5s; /* Firefox < 16 */
@@ -118,10 +119,6 @@
 	 }
 
 	 a {
-		 color: #444;
-	 }
-
-	 a:hover {
 		 color: #3BBAB3;
 	 }
 
@@ -164,7 +161,7 @@
 
 		<!-- Header
 		============================================= -->
-		<header id="header" class="full-header transparent-header static-sticky" data-sticky-offset="full" data-sticky-offset-negative="75">
+		<header id="header" class="full-header transparent-header static-sticky" data-sticky-offset="full" data-sticky-offset-negative="75" data-animate="fadeIn" data-delay="150">
 
 			<div id="header-wrap">
 
@@ -174,7 +171,7 @@
 
 					<!-- Logo
 					============================================= -->
-					<div data-animate="fadeIn" id="logo">
+					<div id="logo">
 						<a href="index.html" class="standard-logo" data-dark-logo="img/logo-sm.png"><img src="img/logo-sm.png" alt="RIOS Logo"></a>
 						<a href="index.html" class="retina-logo" data-dark-logo="img/logo-retina-sm.png"><img src="img/logo-retina-sm.png" alt="RIOS Logo"></a>
 					</div><!-- #logo end -->
@@ -183,13 +180,13 @@
 					============================================= -->
 					<nav id="primary-menu">
 
-						<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
+						<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" >
 							<li><a href="#" data-href="#wrapper"><div>Home</div></a></li>
 							<li><a href="#" data-href="#section-about" data-offset="60"><div>VALUE</div></a></li>
 							<li><a href="#" data-href="#section-works"><div>EXPERIENCE</div></a></li>
-<!--
+							<!--
 							<li><a href="#" data-href="#section-blog"><div>Blog</div></a></li>
-						-->
+							-->
 							<li><a href="#" data-href="#section-founders"><div>LEADERSHIP</div></a></li>
 							<li><a href="#" data-href="#section-contact"><div>CONTACT</div></a></li>
 						</ul>
@@ -239,9 +236,9 @@
 				<div id="section-about" class="page-section">
 					<div class="container clearfix">
 						<div class="emphasis-title">
-							<h1 data-animate="fadeInUp" data-delay="-500">VALUE</h1>
+							<h1 >VALUE</h1>
 						</div>
-						<p data-animate="fadeInUp" data-delay="-500" style="max-width: 800px;" class="center divcenter">
+						<p  style="max-width: 800px;" class="center divcenter">
 							We find innovative ways to meet our client's goals. Our team focuses on effective communication while leveraging technology and creative thinking to enhance the design delivery process.
 							We are recognized for fostering long term relationships, embracing challenge, and going above and beyond to achieve success for our clients.
 						</p>
@@ -251,9 +248,9 @@
 				<div id="section-works" class="page-section">
         	<div class="container clearfix">
 						<div class="emphasis-title">
-							<h1 data-animate="fadeInUp" data-delay="-500">experience</h1>
+							<h1 >experience</h1>
 						</div>
-						<div data-animate="fadeInUp" data-delay="-500" class="pricing-box pricing-extended bottommargin clearfix">
+						<div  class="pricing-box pricing-extended bottommargin clearfix">
 							<div class="pricing-action-area">
 								<div class="pricing-price">
 									<h1 style="font-family: 'Blender Pro'; color: #999;">Workplace</h1>
@@ -284,7 +281,7 @@
 							</div>
 						</div>
 
-						<div data-animate="fadeInUp" data-delay="-500" class="pricing-box pricing-extended bottommargin clearfix">
+						<div  class="pricing-box pricing-extended bottommargin clearfix">
 							<div class="pricing-action-area">
 								<div class="pricing-price">
 									<h1 style="font-family: 'Blender Pro'; color: #999;">Institutional &amp; Outpatient</h1>
@@ -312,7 +309,7 @@
 							</div>
 						</div>
 
-						<div data-animate="fadeInUp" data-delay="-500" class="pricing-box pricing-extended bottommargin clearfix">
+						<div  class="pricing-box pricing-extended bottommargin clearfix">
 							<div class="pricing-action-area">
 								<div class="pricing-price">
 									<h1 style="font-family: 'Blender Pro'; color: #999;">Retail</h1>
@@ -334,7 +331,7 @@
 							</div>
 						</div>
 
-						<div data-animate="fadeInUp" data-delay="-500" class="pricing-box pricing-extended bottommargin clearfix">
+						<div  class="pricing-box pricing-extended bottommargin clearfix">
 							<div class="pricing-action-area">
 								<div class="pricing-price">
 									<h1 style="font-family: 'Blender Pro'; color: #999;">Residential</h1>
@@ -360,40 +357,17 @@
 
 				<div class="line divcenter" style="width: 80%;"></div>
 
-				<div id="section-founders" class="page-section">
+				<div id="section-founders" class="page-section" >
 					<div class="container clearfix">
 						<div class="emphasis-title">
-	          	<h1 data-animate="fadeInUp" data-delay="-500" >LEADERSHIP</h1>
+	          	<h1 >LEADERSHIP</h1>
 						</div>
 
-	          <div class="row divcenter" style="max-width: 1000px;">
+	          <div class="row divcenter" style="width: 80%;">
 
-
-							<div data-animate="fadeInUp" data-delay="-500" class="col-sm-6 bottommargin">
-	              <div class="team">
-	                <div class="team-image">
-	                  <img class="divcenter" src="img/alex-rios-450x550.jpg" alt="Alex Rios Portrait">
-	                  <div class="team-overlay">
-	                    <div class="team-social-icons">
-	                      <a href="#" class="social-icon si-borderless si-small si-facebook" title="Facebook">
-	                        <i class="icon-facebook"></i>
-	                        <i class="icon-facebook"></i>
-	                      </a>
-	                      <a href="#" class="social-icon si-borderless si-small si-twitter" title="Twitter">
-	                        <i class="icon-twitter"></i>
-	                        <i class="icon-twitter"></i>
-	                      </a>
-	                    </div>
-	                  </div>
-	                </div>
-	                <div class="team-desc team-desc-bg">
-	                  <div class="team-title"><h4>Alex Rios, AIA, NCARB, CDT, LEED AP BD+C</h4><span>President</span></div>
-	                </div>
-	              </div>
-	            </div>
-							<div data-animate="fadeInUp" data-delay="-500" class="col-sm-6 bottommargin" style="text-align: left;">
+							<div class="col-sm-6 bottommargin">
 								<h3 style="margin-bottom: 10px;">CREDENTAILS &amp; ACHIEVEMENTS</h3>
-								<p>
+								<p class="divcenter">
 									Registered Architect [AR97426]<br/>
 									NCARB Certificate [81575]<br/>
 									LEED Accredited Professional [10719170]<br/>
@@ -409,8 +383,26 @@
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Community Outreach Committee<br/>
 								</p>
 							</div>
-							<div class="line divcenter"></div>
-							<p data-animate="fadeInUp" data-delay="-500" style="max-width: 80%;" class="center divcenter">
+							<div  class="col-sm-6 bottommargin">
+	              <div class="team">
+	                <div class="team-image">
+	                  <img class="divcenter" src="img/alex-rios-450x550.jpg" alt="Alex Rios Portrait">
+	                  <div class="team-overlay">
+	                    <div class="team-social-icons">
+	                      <a href="https://www.linkedin.com/in/alexmanuelrios" target="_blank" class="social-icon si-borderless si-small si-linkedin" title="LinkedIn">
+	                        <i class="icon-linkedin"></i>
+	                        <i class="icon-linkedin"></i>
+	                      </a>
+
+	                    </div>
+	                  </div>
+	                </div>
+	                <div class="team-desc team-desc-bg">
+	                  <div class="team-title"><h4>Alex Rios, AIA, NCARB, CDT, LEED AP BD+C</h4><span>President</span></div>
+	                </div>
+	              </div>
+	            </div>
+							<p class="center divcenter">
 								Much of who Mr. Rios has become stems from the values and work ethic instilled in him by his family. He demonstrates an eager desire to achieve success and is recognized for going the extra mile to do so.
 								As a Tampa native and Jesuit grad ('06), he is deeply invested in the development of the local community. <br><br>Outside of architecture, Mr. Rios is actively pursuing his fitness goal of dunking a
 								basketball, and can often be found exercising along the downtown Tampa Riverwalk. Some of his favorite local spots include Alifia State Park, Weedon Island Preserve, Sail Pavilion, and Ybor City.
@@ -424,10 +416,10 @@
 				<div id="section-contact" class="page-section">
 						<div class="container clearfix">
 					<div class="emphasis-title">
-						<h1 data-animate="fadeInUp" data-delay="-500" >CONTACT</h1>
+						<h1  >CONTACT</h1>
 					</div>
 				</div>
-					<div data-animate="fadeInUp" data-delay="-500" class="row noleftmargin norightmargin bottommargin-lg common-height">
+					<div  class="row noleftmargin norightmargin bottommargin-lg common-height">
 						<div id="headquarters-map" class="col-md-8 col-sm-6 gmap hidden-xs"></div>
 						<div class="col-md-4 col-sm-6">
 							<div class="col-padding max-height">
@@ -449,10 +441,10 @@
 					</div>
 
 					<div class="container clearfix">
-						<div data-animate="fadeInUp" data-delay="-500" class="divcenter topmargin" style="max-width: 850px;">
+						<div  class="divcenter topmargin" style="max-width: 850px;">
 							<div id="contact-form-result" data-notify-type="success" data-notify-msg="<i class=icon-ok-sign></i> Message Sent Successfully!"></div>
-							<form class="nobottommargin" id="template-contactform" name="template-contactform" action="include/sendemail.php" method="post">
-								<div class="form-process"></div>
+							<form class="nobottommargin" name="template-contactform" action="https://formspree.io/acmotanya@gmail.com" method="POST">
+
 								<div class="col_half">
 									<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control border-form-control required" placeholder="Name" />
 								</div>
@@ -473,12 +465,10 @@
 								<div class="col_full center">
 									<button class="button button-border button-circle t500 noleftmargin topmargin-sm" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Message</button>
 									<br>
-									<small style="display: block; font-size: 13px; margin-top: 15px;">We'll do our best to get back to you within 6-8 working hours.</small>
+
 								</div>
 								<div class="clear"></div>
-								<div class="col_full hidden">
-									<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
-								</div>
+
 							</form>
 						</div>
 					</div>
@@ -543,8 +533,8 @@
 						address: "700 S Harbour Island Blvd #235, Tampa, FL",
 						html: "RIOS ARCHITECTURE",
 						icon: {
-							image: "images/icons/map-icon-red.png",
-							iconsize: [27, 35],
+							image: "img/map-icon.png",
+							iconsize: [30, 40],
 							iconanchor: [13,30]
 						}
 					}
@@ -558,86 +548,7 @@
 					streetViewControl: false,
 					overviewMapControl: false
 				},
-				styles: [
-							    {
-							        "featureType": "administrative",
-							        "elementType": "labels.text.fill",
-							        "stylers": [
-							            {
-							                "color": "#444444"
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "landscape",
-							        "elementType": "all",
-							        "stylers": [
-							            {
-							                "color": "#f2f2f2"
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "poi",
-							        "elementType": "all",
-							        "stylers": [
-							            {
-							                "visibility": "off"
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "road",
-							        "elementType": "all",
-							        "stylers": [
-							            {
-							                "saturation": -100
-							            },
-							            {
-							                "lightness": 45
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "road.highway",
-							        "elementType": "all",
-							        "stylers": [
-							            {
-							                "visibility": "simplified"
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "road.arterial",
-							        "elementType": "labels.icon",
-							        "stylers": [
-							            {
-							                "visibility": "off"
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "transit",
-							        "elementType": "all",
-							        "stylers": [
-							            {
-							                "visibility": "off"
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "water",
-							        "elementType": "all",
-							        "stylers": [
-							            {
-							                "color": "#3BBAB3"
-							            },
-							            {
-							                "visibility": "on"
-							            }
-							        ]
-							    }
-							]
+				styles: [{"featureType":"administrative","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"administrative.country","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"administrative.province","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#e3e3e3"}]},{"featureType":"landscape.natural","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"color":"#cccccc"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"transit.line","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"transit.station.airport","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"transit.station.airport","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#FFFFFF"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]}]
 			});
 
 		});

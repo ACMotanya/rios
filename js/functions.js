@@ -297,7 +297,7 @@ var SEMICOLON = SEMICOLON || {};
 			if( elementMobile != 'true' && ( $body.hasClass('device-xs') || $body.hasClass('device-xxs') ) ) { return true; }
 
 			if( $window.scrollTop() > Number(elementOffset) ) {
-				$goToTopEl.fadeIn();
+				$goToTopEl.fadeIn('slow');
 			} else {
 				$goToTopEl.fadeOut();
 			}
@@ -1073,7 +1073,7 @@ var SEMICOLON = SEMICOLON || {};
 
 			$('body:not(.side-header) #primary-menu > ul, body:not(.side-header) #primary-menu > div > ul:not(.dropdown-menu), .top-links > ul').superfish({
 				popUpSelector: 'ul,.mega-menu-content,.top-link-section',
-				delay: 250,
+				delay: 1250,
 				speed: 350,
 				animation: {opacity:'show'},
 				animationOut:  {opacity:'hide'},
@@ -1087,7 +1087,7 @@ var SEMICOLON = SEMICOLON || {};
 
 					if( megaMenuContent.hasClass('mega-menu-content') && megaMenuContent.find('.widget').length > 0 ) {
 						if( $body.hasClass('device-lg') || $body.hasClass('device-md') ) {
-							setTimeout( function(){ SEMICOLON.initialize.commonHeight( megaMenuContent ); }, 200);
+							setTimeout( function(){ SEMICOLON.initialize.commonHeight( megaMenuContent ); }, 1200);
 						} else {
 							megaMenuContent.children().height('');
 						}
@@ -1097,7 +1097,7 @@ var SEMICOLON = SEMICOLON || {};
 
 			$('body.side-header #primary-menu > ul').superfish({
 				popUpSelector: 'ul',
-				delay: 250,
+				delay: 1250,
 				speed: 350,
 				animation: {opacity:'show',height:'show'},
 				animationOut:  {opacity:'hide',height:'hide'},
