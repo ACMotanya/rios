@@ -423,14 +423,13 @@ body.side-panel-left.side-push-panel.side-panel-open.stretched #header .containe
 .border-form-control {
 	height: 48px;
 	padding: 8px 4px;
-	font-size: 21px;
-	letter-spacing: 1px;
+	font-size: 16px;
 	background-color: transparent !important;
 	border-top: transparent;
 	border-right: transparent;
 	border-left: transparent;
 	border-bottom-width: 1px;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .border-form-control::-moz-placeholder { font-weight: 300; }
