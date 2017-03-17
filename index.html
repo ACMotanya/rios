@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
+
 <head>
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -7,7 +8,8 @@
 
 	<!-- Stylesheets
 	============================================= -->
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,700" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,700" rel="stylesheet"
+	  type="text/css" />
 
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
@@ -23,8 +25,6 @@
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
 
 	<link rel="stylesheet" href="css-2/fonts.css" type="text/css" />
-	<link rel="stylesheet" href="css/components/pricing-table.css" type="text/css" />
-
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
 	<link rel="stylesheet" href="css/custom.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -35,124 +35,6 @@
 	<!-- Document Title
 	============================================= -->
 	<title>RIOS Architecture</title>
-
-	<style>
-
-		#header:not(.sticky-header) #logo a {
-			opacity: 0;
-			pointer-events: none;
-		}
-		#header.sticky-header #logo a {
-		-webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 1.5s; /* Firefox < 16 */
-        -ms-animation: fadein 1.5s; /* Internet Explorer */
-         -o-animation: fadein 1.5s; /* Opera < 12.1 */
-            animation: fadein 1.5s;
-		}
-
-		@keyframes fadein {
-		    from { opacity: 0; }
-		    to   { opacity: 1; }
-		}
-
-		/* Firefox < 16 */
-		@-moz-keyframes fadein {
-		    from { opacity: 0; }
-		    to   { opacity: 1; }
-		}
-
-		/* Safari, Chrome and Opera > 12.1 */
-		@-webkit-keyframes fadein {
-		    from { opacity: 0; }
-		    to   { opacity: 1; }
-		}
-
-		/* Internet Explorer */
-		@-ms-keyframes fadein {
-		    from { opacity: 0; }
-		    to   { opacity: 1; }
-		}
-
-		/* Opera < 12.1 */
-		@-o-keyframes fadein {
-		    from { opacity: 0; }
-		    to   { opacity: 1; }
-		}
-		.col-padding {
-			border-top: 1px solid rgba(0,0,0,0.05);
-			border-bottom: 1px solid rgba(0,0,0,0.05);
-		}
-		.font-body {
-			font-family: 'Blender Pro', 'Lato', sans-serif !important;
-		}
-		div.emphasis-title h1 {
-			font-family: 'Blender Pro';
-			font-size: 70px;
-			word-spacing: 5px;
-			color: #3BBAB3;
-			text-align: center;
-		}
-
-		p, li {
- 		 font-size: 16px;
- 	 }
-	 .col-sm-6 ul li {
-		 margin-bottom: 6px;
-		 border-bottom: 1px solid #666;
-		 list-style: none;
-		 float: left;
-	 }
-
-	 div.col-sm-6 p {
-		 margin-bottom: 5px;
-	 }
-
-	 @media (min-width: 468px){
-		 div.team-image img {
-			 width: 65%;
-		 }
-	 }
-
-	 h3, h4 {
-		 color: #999;
-	 }
-
-	 a {
-		 color: #444;
-	 }
-
-	 a:hover {
-		 color: #3BBAB3;
-	 }
-
-	 a[href^="http://maps.google.com/maps"]{display:none !important}
-	 a[href^="https://maps.google.com/maps"]{display:none !important}
-
-	 .gmnoprint a, .gmnoprint span, .gm-style-cc {
-		 display:none;
-	  }
-		.gmnoprint div {
-				background:none !important;
-		}
-		.pricing-box.pricing-extended .pricing-features li {
-			padding: 2px 0;
-		}
-
-	.pricing-box.pricing-extended .pricing-action-area {
-		left: 0;
-		right: auto;
-		border-right: 1px solid rgba(0,0,0,0.05);
-	}
-	@media (min-width: 991px){
-		.pricing-box.pricing-extended .pricing-desc {
-			float: right;
-		}
-		.pricing-price {
-			top: calc(30%);
-		}
-	}
-
-	</style>
 
 </head>
 
@@ -174,46 +56,70 @@
 
 					<!-- Logo
 					============================================= -->
-					<div data-animate="fadeIn" id="logo">
+					<div id="logo">
 						<a href="index.html" class="standard-logo" data-dark-logo="img/logo-sm.png"><img src="img/logo-sm.png" alt="RIOS Logo"></a>
 						<a href="index.html" class="retina-logo" data-dark-logo="img/logo-retina-sm.png"><img src="img/logo-retina-sm.png" alt="RIOS Logo"></a>
-					</div><!-- #logo end -->
+					</div>
+					<!-- #logo end -->
 
 					<!-- Primary Navigation
 					============================================= -->
 					<nav id="primary-menu">
 
-						<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
-							<li><a href="#" data-href="#wrapper"><div>Home</div></a></li>
-							<li><a href="#" data-href="#section-about" data-offset="60"><div>VALUE</div></a></li>
-							<li><a href="#" data-href="#section-works"><div>EXPERIENCE</div></a></li>
-<!--
+						<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250">
+							<li>
+								<a href="#" data-href="#wrapper">
+									<div>Home</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" data-href="#section-about" data-offset="60">
+									<div>VALUE</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" data-href="#section-works">
+									<div>EXPERIENCE</div>
+								</a>
+							</li>
+							<!--
 							<li><a href="#" data-href="#section-blog"><div>Blog</div></a></li>
-						-->
-							<li><a href="#" data-href="#section-founders"><div>LEADERSHIP</div></a></li>
-							<li><a href="#" data-href="#section-contact"><div>CONTACT</div></a></li>
+							-->
+							<li>
+								<a href="#" data-href="#section-founders">
+									<div>LEADERSHIP</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" data-href="#section-contact">
+									<div>CONTACT</div>
+								</a>
+							</li>
 						</ul>
 						<!--
 						<a href="#" id="overlay-menu-close" class="visible-lg-block visible-md-block"><i class="icon-line-cross"></i></a>
 					  -->
-					</nav><!-- #primary-menu end -->
+					</nav>
+					<!-- #primary-menu end -->
 
 				</div>
 
 			</div>
 
-		</header><!-- #header end -->
+		</header>
+		<!-- #header end -->
 
 		<!-- Slider
 		============================================= -->
 		<section id="slider" class="force-full-screen full-screen">
 
-			<div class="force-full-screen full-screen nopadding nomargin noborder ohidden"> <!-- style="background: url('img/building-2.jpg'); background-size: cover; background-position: top center;" -->
+			<div class="force-full-screen full-screen nopadding nomargin noborder ohidden">
+				<!-- style="background: url('img/building-2.jpg'); background-size: cover; background-position: top center;" -->
 				<div class="container clearfix">
 					<div class="vertical-middle center ignore-header">
 						<div class="emphasis-title bottommargin">
-							<h1 data-animate="fadeIn" >RIOS</h1>
-              <span data-animate="fadeIn" data-delay="1500" class="uppercase t700" style="letter-spacing:8px; font-size: 16px;">Architecture <span style="letter-spacing:1px;">//</span> Interior Design</span>
+							<h1 data-animate="fadeIn">RIOS</h1>
+							<span data-animate="fadeIn" data-delay="1250" class="uppercase landing-subtitle">Architecture <span style="letter-spacing:1px;">//</span>							Interior Design</span>
 						</div>
 					</div>
 				</div>
@@ -229,7 +135,8 @@
 
 			<a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="70" class="one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
 
-		</section><!-- #slider end -->
+		</section>
+		<!-- #slider end -->
 
 		<!-- Content
 		============================================= -->
@@ -239,21 +146,22 @@
 				<div id="section-about" class="page-section">
 					<div class="container clearfix">
 						<div class="emphasis-title">
-							<h1 data-animate="fadeInUp" data-delay="-500">VALUE</h1>
+							<h1>VALUE</h1>
 						</div>
-						<p data-animate="fadeInUp" data-delay="-500" style="max-width: 800px;">
-							We find innovative ways to meet our client's goals. Our team focuses on effective communication while leveraging technology and creative thinking to enhance the design delivery process.
-							We are recognized for fostering long term relationships, embracing challenge, and going above and beyond to achieve success for our clients.
+						<p style="max-width: 800px;" class="center divcenter">
+							We find innovative ways to meet our client's goals. Our team focuses on effective communication while leveraging technology
+							and creative thinking to enhance the design delivery process. We are recognized for fostering long term relationships,
+							embracing challenge, and going above and beyond to achieve success for our clients.
 						</p>
 					</div>
 				</div>
 				<div class="line divcenter" style="width: 80%;"></div>
 				<div id="section-works" class="page-section">
-        	<div class="container clearfix">
+					<div class="container clearfix">
 						<div class="emphasis-title">
-							<h1 data-animate="fadeInUp" data-delay="-500">experience</h1>
+							<h1>experience</h1>
 						</div>
-						<div data-animate="fadeInUp" data-delay="-500" class="pricing-box pricing-extended bottommargin clearfix">
+						<div class="pricing-box pricing-extended bottommargin clearfix">
 							<div class="pricing-action-area">
 								<div class="pricing-price">
 									<h1 style="font-family: 'Blender Pro'; color: #999;">Workplace</h1>
@@ -284,7 +192,7 @@
 							</div>
 						</div>
 
-						<div data-animate="fadeInUp" data-delay="-500" class="pricing-box pricing-extended bottommargin clearfix">
+						<div class="pricing-box pricing-extended bottommargin clearfix">
 							<div class="pricing-action-area">
 								<div class="pricing-price">
 									<h1 style="font-family: 'Blender Pro'; color: #999;">Institutional &amp; Outpatient</h1>
@@ -312,7 +220,7 @@
 							</div>
 						</div>
 
-						<div data-animate="fadeInUp" data-delay="-500" class="pricing-box pricing-extended bottommargin clearfix">
+						<div class="pricing-box pricing-extended bottommargin clearfix">
 							<div class="pricing-action-area">
 								<div class="pricing-price">
 									<h1 style="font-family: 'Blender Pro'; color: #999;">Retail</h1>
@@ -334,7 +242,7 @@
 							</div>
 						</div>
 
-						<div data-animate="fadeInUp" data-delay="-500" class="pricing-box pricing-extended bottommargin clearfix">
+						<div class="pricing-box pricing-extended bottommargin clearfix">
 							<div class="pricing-action-area">
 								<div class="pricing-price">
 									<h1 style="font-family: 'Blender Pro'; color: #999;">Residential</h1>
@@ -345,7 +253,7 @@
 								<div class="pricing-features">
 									<ul class="clearfix">
 										<li style="text-decoration: underline;" class="t600">Single Family Homes:</li>
-										<li >2,500 - 10,000 sf</li>
+										<li>2,500 - 10,000 sf</li>
 										<li class="pricing--feature">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8+ locations</li>
 										<div class="clear"></div>
 										<li style="text-decoration: underline;" class="t600">Multi-family Renovation:</li>
@@ -354,88 +262,77 @@
 								</div>
 							</div>
 						</div>
-	        </div>
-
+					</div>
 				</div>
 
 				<div class="line divcenter" style="width: 80%;"></div>
-
 				<div id="section-founders" class="page-section">
 					<div class="container clearfix">
 						<div class="emphasis-title">
-	          	<h1 data-animate="fadeInUp" data-delay="-500" >LEADERSHIP</h1>
+							<h1>LEADERSHIP</h1>
 						</div>
 
-	          <div class="row" style="max-width: 1000px;">
-
-							<div data-animate="fadeInUp" data-delay="-500" class="col-sm-6 bottommargin" style="text-align: left;">
+						<div class="row divcenter limit-width">
+							<div class="col-sm-6 bottommargin credit">
 								<h3 style="margin-bottom: 10px;">CREDENTAILS &amp; ACHIEVEMENTS</h3>
-								<p>
-									Registered Architect [AR97426]<br/>
-									NCARB Certificate [81575]<br/>
-									LEED Accredited Professional [10719170]<br/>
-									Construction Documentation Technologist, CSI<br/>
-									Merit Award for Design Excellence, AIA<br/>
-									Panelist at AIA Florida Convention<br/>
-									NCARB Architect Spotlight<br/>
-									Masters of Architecture<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;University of South Florida<br/>
-									Member, American Institute of Architects<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Associate Director<br/>
-									Member, Emerge Tampa Bay<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Community Outreach Committee<br/>
+								<p class="divcenter">
+									Registered Architect [AR97426]<br/> NCARB Certificate [81575]<br/> LEED Accredited Professional [10719170]<br/>									Construction Documentation Technologist, CSI<br/> Merit Award for Design Excellence, AIA<br/> Panelist at AIA Florida
+									Convention<br/> NCARB Architect Spotlight<br/> Masters of Architecture<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;University
+									of South Florida<br/> Member, American Institute of Architects<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Associate
+									Director<br/> Member, Emerge Tampa Bay<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Community Outreach Committee<br/>
 								</p>
 							</div>
-							<div data-animate="fadeInUp" data-delay="-500" class="col-sm-6 bottommargin">
-	              <div class="team">
-	                <div class="team-image">
-	                  <img class="divcenter" src="img/alex-rios-450x550.jpg" alt="Alex Rios Portrait">
-	                  <div class="team-overlay">
-	                    <div class="team-social-icons">
-	                      <a href="#" class="social-icon si-borderless si-small si-facebook" title="Facebook">
-	                        <i class="icon-facebook"></i>
-	                        <i class="icon-facebook"></i>
-	                      </a>
-	                      <a href="#" class="social-icon si-borderless si-small si-twitter" title="Twitter">
-	                        <i class="icon-twitter"></i>
-	                        <i class="icon-twitter"></i>
-	                      </a>
-	                    </div>
-	                  </div>
-	                </div>
-	                <div class="team-desc team-desc-bg">
-	                  <div class="team-title"><h4>Alex Rios, AIA, NCARB, CDT, LEED AP BD+C</h4><span>President</span></div>
-	                </div>
-	              </div>
-	            </div>
-							<div class="line divcenter"></div>
-							<p data-animate="fadeInUp" data-delay="-500" style="max-width: 80%;">
-								Much of who Mr. Rios has become stems from the values and work ethic instilled in him by his family. He demonstrates an eager desire to achieve success and is recognized for going the extra mile to do so.
-								As a Tampa native and Jesuit grad ('06), he is deeply invested in the development of the local community. <br><br>Outside of architecture, Mr. Rios is actively pursuing his fitness goal of dunking a
-								basketball, and can often be found exercising along the downtown Tampa Riverwalk. Some of his favorite local spots include Alifia State Park, Weedon Island Preserve, Sail Pavilion, and Ybor City.
+							<div class="col-sm-6 bottommargin">
+								<div class="team">
+									<div class="team-image">
+										<img class="divcenter" src="img/alex-rios-450x550.jpg" alt="Alex Rios Portrait">
+										<div class="team-overlay">
+											<div class="team-social-icons">
+												<a href="https://www.linkedin.com/in/alexmanuelrios" target="_blank" class="social-icon si-borderless si-small si-linkedin"
+												  title="LinkedIn">
+													<i class="icon-linkedin"></i>
+													<i class="icon-linkedin"></i>
+												</a>
+
+											</div>
+										</div>
+									</div>
+									<div class="team-desc team-desc-bg">
+										<div class="team-title">
+											<h4>Alex Rios, AIA, NCARB, CDT, LEED AP BD+C</h4><span>President</span></div>
+									</div>
+								</div>
+							</div>
+							<div class="clear"></div>
+							<p class="center divcenter">
+								Much of who Mr. Rios has become stems from the values and work ethic instilled in him by his family. He demonstrates an eager
+								desire to achieve success and is recognized for going the extra mile to do so. As a Tampa native and Jesuit grad
+								('06), he is deeply invested in the development of the local community. <br><br>Outside of architecture,
+								Mr. Rios is actively pursuing his fitness goal of dunking a basketball, and can often be found exercising along the
+								downtown Tampa Riverwalk. Some of his favorite local spots include Alifia State Park, Weedon Island Preserve, Sail
+								Pavilion, and Ybor City.
 							</p>
-	          </div>
+						</div>
 					</div>
 				</div>
 
 				<div class="line divcenter" style="width: 80%;"></div>
 
 				<div id="section-contact" class="page-section">
-						<div class="container clearfix">
-					<div class="emphasis-title">
-						<h1 data-animate="fadeInUp" data-delay="-500" >CONTACT</h1>
+					<div class="container clearfix">
+						<div class="emphasis-title">
+							<h1>CONTACT</h1>
+						</div>
 					</div>
-				</div>
-					<div data-animate="fadeInUp" data-delay="-500" class="row noleftmargin norightmargin bottommargin-lg common-height">
-						<div id="headquarters-map" class="col-md-8 col-sm-6 gmap hidden-xs"></div>
+					<div class="row noleftmargin norightmargin bottommargin-lg common-height">
+						<div id="headquarters-map" class="col-md-8 col-sm-6 gmap"></div>
 						<div class="col-md-4 col-sm-6">
 							<div class="col-padding max-height">
 								<h3 class="font-body t400 ls1 nobottommargin">Office</h3>
 								<div style="font-size: 16px; line-height: 1.7;">
 									<a href="https://www.google.com/maps/place/700+S+Harbour+Island+Blvd+%23235,+Tampa,+FL+33602/" target="_blank">
 										<address style="line-height: 1.7;">
-											700 S Harbour Island Blvd #235<br>
-											Tampa, FL 33602<br>
+											700 S Harbour Island Blvd #235<br> Tampa, FL 33602<br>
 										</address>
 									</a>
 									<div class="clear topmargin"></div>
@@ -448,42 +345,47 @@
 					</div>
 
 					<div class="container clearfix">
-						<div data-animate="fadeInUp" data-delay="-500" class="divcenter topmargin" style="max-width: 850px;">
+						<div class="divcenter topmargin" style="max-width: 850px;">
 							<div id="contact-form-result" data-notify-type="success" data-notify-msg="<i class=icon-ok-sign></i> Message Sent Successfully!"></div>
-							<form class="nobottommargin" id="template-contactform" name="template-contactform" action="include/sendemail.php" method="post">
-								<div class="form-process"></div>
+							<form class="nobottommargin" name="template-contactform" action="https://formspree.io/Alex_Rios@RiosArchitecture.com" method="POST">
+
 								<div class="col_half">
-									<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control border-form-control required" placeholder="Name" />
+									<input type="text" id="template-contactform-name" name="name" value="" class="sm-form-control border-form-control required"
+									  placeholder="Name" />
 								</div>
 								<div class="col_half col_last">
-									<input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email sm-form-control border-form-control" placeholder="Email Address" />
+									<input type="email" id="template-contactform-email" name="email" value="" class="required email sm-form-control border-form-control"
+									  placeholder="Email Address" />
 								</div>
 								<div class="clear"></div>
 								<div class="col_one_third">
-									<input type="text" id="template-contactform-phone" name="template-contactform-phone" value="" class="sm-form-control border-form-control" placeholder="Phone" />
+									<input type="text" id="template-contactform-phone" name="phone" value="" class="sm-form-control border-form-control" placeholder="Phone"
+									/>
 								</div>
 								<div class="col_two_third col_last">
-									<input type="text" id="template-contactform-subject" name="template-contactform-subject" value="" class="required sm-form-control border-form-control" placeholder="Subject" />
+									<input type="text" id="template-contactform-subject" name="subject" value="" class="required sm-form-control border-form-control"
+									  placeholder="Subject" />
 								</div>
 								<div class="clear"></div>
 								<div class="col_full">
-									<textarea class="required sm-form-control border-form-control" id="template-contactform-message" name="template-contactform-message" rows="7" cols="30" placeholder="Your Message"></textarea>
+									<textarea class="required sm-form-control border-form-control" id="template-contactform-message" name="message" rows="7"
+									  cols="30" placeholder="Your Message"></textarea>
 								</div>
 								<div class="col_full center">
-									<button class="button button-border button-circle t500 noleftmargin topmargin-sm" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Message</button>
+									<button class="button button-border button-circle t500 noleftmargin topmargin-sm" type="submit" id="template-contactform-submit"
+									  value="submit">Send Message</button>
 									<br>
-									<small style="display: block; font-size: 13px; margin-top: 15px;">We'll do our best to get back to you within 6-8 working hours.</small>
+
 								</div>
 								<div class="clear"></div>
-								<div class="col_full hidden">
-									<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
-								</div>
+
 							</form>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section><!-- #content end -->
+		</section>
+		<!-- #content end -->
 
 		<!-- Footer
 		============================================= -->
@@ -493,8 +395,10 @@
 					RIOS Architecture 2017 | All Rights Reserved
 				</div>
 			</div>
-		</footer><!-- #footer end -->
-	</div><!-- #wrapper end -->
+		</footer>
+		<!-- #footer end -->
+	</div>
+	<!-- #wrapper end -->
 
 	<!-- Go To Top
 	============================================= -->
@@ -513,41 +417,23 @@
 	<script type="text/javascript" src="js/functions.js"></script>
 
 	<script type="text/javascript">
-
-
-
 		// Portfolio Script
-		jQuery(window).load(function(){
-
-			var jQuerycontainer = jQuery('#portfolio');
-			jQuerycontainer.isotope({
-				transitionDuration: '0.65s',
-				masonry: {
-					columnWidth: jQuerycontainer.find('.portfolio-item:not(.wide)')[0]
-				}
-			});
-			jQuery(window).resize(function() {
-				jQuerycontainer.isotope('layout');
-				SEMICOLON.portfolio.portfolioDescMargin();
-			});
-			var t = setTimeout(function(){ SEMICOLON.portfolio.portfolioDescMargin(); }, 200);
+		jQuery(window).load(function () {
 
 			// Google Map
 			jQuery('#headquarters-map').gMap({
 				address: '700 S Harbour Island Blvd #235, Tampa, FL',
 				maptype: 'ROADMAP',
 				zoom: 12,
-				markers: [
-					{
-						address: "700 S Harbour Island Blvd #235, Tampa, FL",
-						html: "RIOS ARCHITECTURE",
-						icon: {
-							image: "images/icons/map-icon-red.png",
-							iconsize: [27, 35],
-							iconanchor: [13,30]
-						}
+				markers: [{
+					address: "700 S Harbour Island Blvd #235, Tampa, FL",
+					html: "RIOS ARCHITECTURE",
+					icon: {
+						image: "img/map-icon.png",
+						iconsize: [30, 40],
+						iconanchor: [13, 30]
 					}
-				],
+				}],
 				doubleclickzoom: false,
 				controls: {
 					panControl: false,
@@ -557,86 +443,99 @@
 					streetViewControl: false,
 					overviewMapControl: false
 				},
-				styles: [
-							    {
-							        "featureType": "administrative",
-							        "elementType": "labels.text.fill",
-							        "stylers": [
-							            {
-							                "color": "#444444"
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "landscape",
-							        "elementType": "all",
-							        "stylers": [
-							            {
-							                "color": "#f2f2f2"
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "poi",
-							        "elementType": "all",
-							        "stylers": [
-							            {
-							                "visibility": "off"
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "road",
-							        "elementType": "all",
-							        "stylers": [
-							            {
-							                "saturation": -100
-							            },
-							            {
-							                "lightness": 45
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "road.highway",
-							        "elementType": "all",
-							        "stylers": [
-							            {
-							                "visibility": "simplified"
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "road.arterial",
-							        "elementType": "labels.icon",
-							        "stylers": [
-							            {
-							                "visibility": "off"
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "transit",
-							        "elementType": "all",
-							        "stylers": [
-							            {
-							                "visibility": "off"
-							            }
-							        ]
-							    },
-							    {
-							        "featureType": "water",
-							        "elementType": "all",
-							        "stylers": [
-							            {
-							                "color": "#3BBAB3"
-							            },
-							            {
-							                "visibility": "on"
-							            }
-							        ]
-							    }
-							]
+				styles: [{
+					"featureType": "administrative",
+					"elementType": "labels",
+					"stylers": [{
+						"visibility": "on"
+					}]
+				}, {
+					"featureType": "administrative.country",
+					"elementType": "geometry.stroke",
+					"stylers": [{
+						"visibility": "off"
+					}]
+				}, {
+					"featureType": "administrative.province",
+					"elementType": "geometry.stroke",
+					"stylers": [{
+						"visibility": "off"
+					}]
+				}, {
+					"featureType": "landscape",
+					"elementType": "geometry",
+					"stylers": [{
+						"visibility": "on"
+					}, {
+						"color": "#e3e3e3"
+					}]
+				}, {
+					"featureType": "landscape.natural",
+					"elementType": "labels",
+					"stylers": [{
+						"visibility": "off"
+					}]
+				}, {
+					"featureType": "poi",
+					"elementType": "all",
+					"stylers": [{
+						"visibility": "off"
+					}]
+				}, {
+					"featureType": "road",
+					"elementType": "all",
+					"stylers": [{
+						"color": "#cccccc"
+					}]
+				}, {
+					"featureType": "road",
+					"elementType": "labels",
+					"stylers": [{
+						"visibility": "off"
+					}]
+				}, {
+					"featureType": "transit",
+					"elementType": "labels.icon",
+					"stylers": [{
+						"visibility": "off"
+					}]
+				}, {
+					"featureType": "transit.line",
+					"elementType": "geometry",
+					"stylers": [{
+						"visibility": "off"
+					}]
+				}, {
+					"featureType": "transit.line",
+					"elementType": "labels.text",
+					"stylers": [{
+						"visibility": "off"
+					}]
+				}, {
+					"featureType": "transit.station.airport",
+					"elementType": "geometry",
+					"stylers": [{
+						"visibility": "off"
+					}]
+				}, {
+					"featureType": "transit.station.airport",
+					"elementType": "labels",
+					"stylers": [{
+						"visibility": "off"
+					}]
+				}, {
+					"featureType": "water",
+					"elementType": "geometry",
+					"stylers": [{
+						"color": "#FFFFFF"
+					}]
+				}, {
+					"featureType": "water",
+					"elementType": "labels",
+					"stylers": [{
+						"visibility": "off"
+					}]
+				}]
 			});
 
 		});
@@ -644,30 +543,27 @@
 
 		// Contact Form
 		$("#template-contactform").validate({
-				submitHandler: function(form) {
-					$('.form-process').fadeIn();
-					$(form).ajaxSubmit({
-						target: '#contact-form-result',
-						success: function() {
-							$('.form-process').fadeOut();
-							$(form).find('.sm-form-control').val('');
-							$('#contact-form-result').attr('data-notify-msg', $('#contact-form-result').html()).html('');
-							SEMICOLON.widget.notifications($('#contact-form-result'));
-						}
-					});
-				}
-			});
+			submitHandler: function (form) {
+				$('.form-process').fadeIn();
+				$(form).ajaxSubmit({
+					target: '#contact-form-result',
+					success: function () {
+						$('.form-process').fadeOut();
+						$(form).find('.sm-form-control').val('');
+						$('#contact-form-result').attr('data-notify-msg', $('#contact-form-result').html()).html('');
+						SEMICOLON.widget.notifications($('#contact-form-result'));
+					}
+				});
+			}
+		});
 
-		</script>
+		$(function () {
+			$('#primary-menu').fadeOut(function () {
+				$(this).delay(1350).fadeIn(2000);
+			});
+		});
+	</script>
 
 </body>
+
 </html>
-
-
-<!--
-
-center value section
-get rid of spcae on locaton padding-right
-work on alignment for the page; the picture on the leadership padding
-
--->
